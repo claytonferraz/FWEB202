@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Formulários - HTML</title>
+    </head>
+    <body bgcolor="#DCDCDC">
+        <style> 
+            div.a{
+                text-align: center;
+            }
+        </style>
+        <div class="a">
+            <h2>Formulário</h2> 
+        </div>
+        <form>
+            <p>
+                <strong>O que você achou do site?</strong>
+                <dl>
+                    <dd>
+                      <input type = "radio" name= "avaliacao" value= "muito bom" check>Muito Bom
+                      <input type = "radio" name= "avaliacao" value= "bom" check>Bom
+                      <input type = "radio" name= "avaliacao" value= "regular" check>Regular
+                      <input type = "radio" name= "avaliacao" value= "um lixo" check>Um lixo
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong>Qual a seção você mais gostou></strong>
+                <dl>
+                    <dd>
+                     <select name= "secao" size="1">
+                        <option value= "emcartaz">Em cartaz</option>
+                        <option value= "trilhasonora">Trilha Sonora</option>
+                        <option value= "fotos">Galeria de Fotos</option>
+                        <option value= "bilheteria">Bilheteria</option>
+                        <option value= "outra">Outra</option>
+                     </select>
+                     Outra: <input type="text" size="26" maxlength="256" name="outra">  
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong>Digite seus comentarios no campo abaixo:</strong>
+                 <dl>
+                     <dd>
+                         <textarea name="comentarios" rows="5" cols="42"></textarea>
+                     </dd>
+                 </dl>
+            </p>
+            <p>
+                <strong>Diga-nos como entrar em contato com você:</strong>
+                <dl>
+                    <dd>
+                     <pre>
+                         Nome <input type="text" size="35" maxlength="256" name="name">
+                         Email <input type="text" size="35" maxlength="256" name="email">
+                         Fone <input type="text" size="35" maxlength="256" name="fone">
+                     </pre>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <input type="checkbox" name="novidades" value="nov">Quero receber novidades por email
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <input type="submit" value ="Enviar Dados">
+                <input type= "reset" value="Limpar Formulário">
+            </p>
+
+        </form>  
+    </body>
+
+</html>

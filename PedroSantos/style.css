@@ -1,0 +1,24 @@
+
+ *
+    {
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;               
+    }
+footer
+    {
+                   
+    position: absolute;
+    background-color: black;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: azure;
+    }
+#Cervejinha
+{
+    margin: 0%;
+    border-width:30px;
+    padding:60px
+         
+    }

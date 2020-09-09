@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formulários - HTML
+        </title>
+        <meta charset="UTF-8">
+    </head>
+    <body bgcolor="LightCyan">
+        <form action = "processa.php">
+            <center>
+                <font color="Red"> <h1> Aprendendo fazer Formulário - TESTE. </h1><font size="5"></font> </font>
+            </center>
+            <p>
+                Oculto:
+                <input type="hidden" name="oculto" size="20">
+            </p>
+            <p>
+                Digite seu E-mail:
+                <input type="text" name="email" size="20">
+            </p>
+            <p>
+                Digite a senha:
+                <input type="password" name="senha" size="20">
+            </p>
+            <p>
+               Seu arquivo:
+                <input type="file" name="file" size="20">
+            </p>
+            <p>
+                Escolaridade:
+                  <select name="escolaridade">
+                  <option value="EM">Ensino Médio</option>
+                  <option value="NT">Nível Técnico</option>
+ 
+                  ></select>
+              </p> 
+           
+            <p>
+                Digite seu E-mail:
+                <input type="submit" value="Enviar" nome="enviar">
+            </p>
+
+            <br/>
+            
+                <center>                            
+                    <img src="Imagens/1_aSWrBdD30msWqjYW2SFj8g.png" width="1650" height="250"><br/>
+                    <font color="Crimson"> <h1> Formulário de Satisfação </h1><font size="5"></font> </font>
+                </center>
+
+        </form>
+        <form action = "processa.php">
+           <p>
+                Qual seu Nome?:
+                <input type="text" name="email" size="20">
+            </p>
+            <p>
+                Qual sua Idade:
+                <input type="text" name="idade" size="5">
+            </p>
+            <p>
+               Seu Sexo:
+               <select name="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                ></select>
+            </p>
+            <p>
+                Escolaridade:
+                  <select name="escolaridade">
+                     <option value="EFI">Ensino Fundamental Incompleto</option>
+                     <option value="EF">Ensino Fundamental</option>
+                     <option value="EMI">Ensino Médio Incompleto</option>
+                     <option value="EM">Ensino Médio</option>
+                     <option value="NT">Nível Técnico</option>
+                     <option value="ESI">Ensino Superior Incompleto</option>
+                     <option value="ES">Ensino Superior</option>                     
+                  ></select>
+                  Outros: <input type="text" size="26" maxlength="256" name="=Outra"> 
+
+            </p>
+              
+            </p>
+            <br/>
+            
+            <p>
+                <strong> 
+                    O que você achou deste site? 
+                </strong>
+                <dl>
+                    <dd> 
+                        <input type="radio" name="Avaliacao" value="muitobom" checked>Muito Bom
+                        <input type="radio" name="Avaliacao" value="bom">Bom
+                        <input type="radio" name="Avaliacao" value="regular">Regular
+                        <input type="radio" name="Avaliacao" value="umlixo">Um lixo
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong> 
+                    Qual foi a seção que você mais gostou? 
+                </strong>
+                <dl>
+                    <dd> 
+                        <select name="secao" size="1">
+                            <option value="EmCartaz"> Em Cartaz </option>
+                            <option value="TrilhaSonora"> Trilha Sonora </option>
+                            <option value="Fotos"> Fotos </option>
+                            <option value="Bilheteria"> Bilheteria </option>
+                            <option value="Outra"> Outra </option>
+                        </select>
+                        Outra: <input type="text" size="26" maxlength="256" name="=Outra">                        
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong> 
+                    Digite o seus comentários neste campo abaixo...
+                </strong>
+                <dl>
+                    <dd>
+                        <textarea name="comentarios" rows="5" cols="42"></textarea>
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong> 
+                    Diga-nos como entrar em contato com você:
+                </strong>
+                <dl>
+                    <dd>
+                        <pre>
+                            Nome: <input type="text" size="35" maxlength="256" name="nome">
+                            E-mail: <input type="text" size="35" maxlength="256" name="email">
+                            Telefone: <input type="text" size="35" maxlength="256" name="telefone">
+                        </pre>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <input type="checkbox" name="novidades" value="novidade"> 
+                        Quero receber as novidades do site em meu e-mail...
+                    </dd>
+                 </dl>
+            </p>
+            <p>
+                <input type="submit" value="Enviar Dados"> 
+                <input type="reset" value="Limpar Formulário"> 
+            </p>
+        </form>  
+        <center>                            
+            <img src="Imagens/rodape-1.png" width="1650" height="300"><br/>            
+        </center>     
+
+    </body>
+</html> 

@@ -3,12 +3,10 @@
     {
     padding:0%;
     margin:0%;
-    box-sizing: border-box;               
+    box-sizing: border-box         
     }
 footer
     {
-                   
-    position: absolute;
     background-color: black;
     bottom: 0px;
     width: 100%;

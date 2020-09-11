@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <title>Formularios - HTML</title>
+      <meta charset="utf-8">
+    
+  </head>
+  <body>
+    <form>
+
+      <p>
+        Oculto:
+        <input type="hidden" name="oculto" size="20">
+      </p>
+ 
+
+      <p>
+        digite seu E-mail:
+        <input type="text" name="email" size="20">
+     </p>
+
+      
+      <p>
+        Digite a senha:
+        <input type="password" name="senha" size="20">
+      </p>
+
+      <p>
+        Seu Arquivo:
+        <input type="file" name="file" size="20">
+      </p>
+
+      <p>
+        ESCOLARIDADE:
+        <select name=" escolaridade">
+          <option value=" EM"> Ensino Médio </option>
+          <option value=" NT"> Nivel  tecnico </option>
+        </select>
+      </p>
+
+
+      <p>
+        <input type="submit" value=" manda ai meu filho">
+      </p>
+    </body>
+  </form>
+      TAREFA
+
+    <form action="processa.php">
+    <p>
+      <strong>o que você acho do site??</strong>
+      <dl>
+        <dd>
+          <input type="radio" name="avaliação " value="muito bom" checked>Muito bom
+          <input type="radio" name="avaliação " value="bom">Bom
+          <input type="radio" name="avaliação " value="regular">regular
+          <input type="radio" name="avaliação " value="umlixo">Um lixo
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <strong> Qual a seção que você mais gostou </strong>
+      <dl>
+        <dd>
+          <select name="secao" size="1">
+            <option value="emcartaz"> Em cartaz </option>
+            <option value="trilhasonora"> Trilha Sonora </option>
+            <option value="fotos"> Galeria de Fotos </option>
+            <option value="bilheteria "> Bilheteria  </option>
+            <option value="outra"> Outra </option>
+          </select>
+          Outra: <input type="text" size="26" maxlength="256" name="outra">
+        </dd>
+      </dl>
+    </p>
+
+
+    <p>
+      <strong> Digite seus comentários no campo abaixo: </strong>
+      <dl>
+        <dd>
+          <textarea name="comentarios" rows="5" cols="42"></textarea>
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <strong> Diga-nos como entrar em contato com você: </strong>
+      <dl>
+        <dd>
+          <pre>
+            Nome <input type="text" size="35" maxlength="256" name="nome">
+            E-mail <input type="text" size="35" maxlength="256" name="email">
+            Fone <input type="text"  size="35" maxlength="256" name="fone">
+           </pre>
+        </dd>
+      </dl>
+      <dl>
+        <dd>
+          <input type="checkbox" name="novidade" value="nov"> Quero receber as novidades do site por e-mail
+        </dd>
+      </dl>
+    </p>
+
+
+    <p>
+      <input type="submit" value="Enviar Dados">
+      <input type="reset"  value="Limpar Formulário ">
+
+    </p>
+ </form>
+
+  
+</html>

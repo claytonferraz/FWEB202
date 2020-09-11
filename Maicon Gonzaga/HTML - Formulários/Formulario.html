@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>..:: Formulário ::..</Title>
+    </head>
+    <body>
+        <h1>Cadastro de usuários</h1><br />
+        <form action="#" method="post">
+            <div>
+                <label><span>*</span> CPF</label>
+                <input name="cpf" type="text" id="cpf" placeholder="Somente Números">
+            </div><br />
+            <div>
+                <label><span>*</span> Senha</label>
+                <input name="senha" type="password" id="senha" placeholder="Mínimo de 6 Caracter">
+            </div><br />
+            <div>
+                <label><span>*</span> Confirmação</label>
+                <input name="confima" type="password" id="confimaSenha" placeholder="Informe a Mesma Senha">
+            </div><br />
+            <div>
+                <label><span class="text-danger">*</span> Nome</label>
+                <input name="nome" type="text" id="nome" placeholder="Somente o Primeiro Nome">
+            </div><br />
+            <div>
+                <label>Sobrenome</label>
+                <input name="sobrenome" type="text" id="sobrenome" placeholder="Restante do Nome">
+            </div><br />
+            <div>
+                <label><span>*</span> Nível de Acesso</label>
+                <select name="permissao">
+                    <option selected>Selecione...</option>
+                    <option value="1">Administrador</option>
+                    <option value="1">Comum</option>
+                </select>
+            </div><br /><br />
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div><br />
+            <div>
+                <span>*</span>
+                Campo Obrigatório
+            </div><br />
+        </form>
+    </body>
+</html>

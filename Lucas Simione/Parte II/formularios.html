@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>
+        Formulários
+    </title>
+</head>
+<body>
+    <form action="">
+        <p> 
+            <dl>
+                <dt>
+                    <h1>O que você achou desse site?</h1>
+                </dt>
+                <dd>
+                    <input type="radio" name="avaliacao">Muito bom
+                    <input type="radio" name="avaliacao">Regular
+                    <input type="radio" name="avaliacao">Péssimo
+                </dd>
+            </dl>          
+        </p>
+        <p>
+            <dl>
+                <dt> 
+                    <h1>Qual sua fruta preferida?</h1>
+                </dt>
+                <dd>
+                    <select name="secao" id="">
+                        <option value="goiaba">Goiaba</option>
+                        <option value="manga">Manga</option>
+                        <option value="jambo">Jambo</option>
+                    </select>
+                    <input type="text" name="outra" placeholder="Digite outra opção"> 
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <dl>
+                <dt><h1>Entre em contato conosco!</h1></dt>
+                <dd><input type="text" name="nome" placeholder="Digite seu nome"></dd>
+                <dd><input type="text" name="email" placeholder="Digite seu email"></dd>
+                <dd><textarea name="mensagem" id="" cols="32" rows="10" placeholder="O que voce tem pra nos dizer?"></textarea></dd>
+            </dl>
+        </p>
+        <p>
+            <input type="checkbox"> Desejo receber notificações sobre as promoções no meu email
+        </p>
+        <p>
+            <dl>
+                <dd>
+                    <input type="submit"> 
+                    <input type="reset" value="Limpar"> 
+                </dd>
+            </dl>
+        </p>
+    </form>
+</body>
+</html>

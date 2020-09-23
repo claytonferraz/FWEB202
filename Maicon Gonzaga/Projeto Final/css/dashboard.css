@@ -1,0 +1,70 @@
+﻿/*Seletor usado para colocar fundo na area de trabalho*/
+body {
+    background-color: #eaeef3;
+}
+.menu-header {
+    color: #FFF !important;
+}
+/*Seletor usado para criar menu lateral (fundo do menu, tamanho fixo de largura e comprimento)*/
+.sidebar {
+    background-color: #222c3c;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: calc(100vh - 56px);
+    transition: all 0.3s;
+}
+/*Seletor usado para remover as caracteristicas comuns de link de texto*/
+.sidebar ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #c7cace;
+    text-decoration: none;
+}
+/*Seletor usado para mudar a cor da fonte e fundo do menu cujo mouse esteja encima*/
+.sidebar ul li a:hover, .sidebar ul .active a{
+    color: #ecdee;
+    background-color: #354358;
+}
+/*Seletor usado para colocar submenu de cor diferente e colocar espaço em relação ao menu*/
+.sidebar ul ul a{
+    padding-left: 2.5rem;
+    background-color: #1e2835;
+}
+/*Seletor usado para ocultar o menu manualmente*/
+.sidebar.toggled {
+    margin-left: -250px;
+}
+/*Seletor usado para ocultar o menu automaticamente em dispositivos pequenos*/
+@media(max-width: 768px){
+    .sidebar{
+        margin-left: -250px;
+    }
+    .sidebar.toggled {
+        margin-left: 0px;
+    }
+}
+/*Seletores usados para aparecer seta do submenu*/
+.sidebar [data-toggle="collapse"]{
+    position: relative;
+}
+.sidebar [data-toggle="collapse"]:before{
+    content: "\f0d7";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+}
+/*Muda a cor do Menu para se parecer com submenu*/
+.sidebar [aria-expanded="true"]{
+    background-color: #19222d;
+}
+/*Muda o icone do menu para ceta pra cima*/
+.sidebar [aria-expanded="true"]:before{
+    content: "\f0d8";
+}
+.content{
+    width: 100%;
+}
+.titulo{
+    font-size: 2.0rem !important;
+}

@@ -1,0 +1,49 @@
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*Inicio - retratos*/
+.retratos {
+  width: 180px;
+  margin-right: 1%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.retratos h2{
+  text-align: center;
+  opacity: 0.5;
+}
+.retratos img {
+  width: 100%;
+}
+/*Fim - retratos*/
+
+/*Inicio - paisagens*/
+.paisagens {
+  width: 180px;
+  margin-left: 1%;
+  margin-bottom: 10%;
+  margin-top: 13%;
+}
+.paisagens h2{
+  text-align: center;
+  opacity: 0.5;
+}
+.paisagens img {
+  width: 100%;
+}
+/*Fim - paisagens*/
+
+/*Inicio - links*/
+.container a:hover {
+  border-bottom: none;
+}
+.links {
+  transform: 1000s;
+}
+.links:hover {
+  opacity: 0.3;
+}

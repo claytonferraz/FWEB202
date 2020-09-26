@@ -1,0 +1,14 @@
+/*Inicio - imagens container*/
+.container {
+  width: 85%;
+  margin-left: -20%;
+  display: block;
+}
+.imagens {
+  width: 300px;
+  display: flex;
+}
+.imagens img {
+  width: 100%;
+  margin: 1%;
+}

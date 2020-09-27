@@ -30,3 +30,10 @@ body{
 body table {
     background-color: white;
 }
+
+body footer{
+    background-color: fuchsia;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+}

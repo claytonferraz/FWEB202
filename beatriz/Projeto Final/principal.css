@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: darkmagenta;
 }
 
 #menu ul{
@@ -9,10 +10,23 @@ body{
 }
 
 #menu ul li{
-    
+ display: inline;   
 
 }
  
 #menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
 
+    color: white;
+    text-decoration: none;
+
+}
+
+#menu ul li a:hover{
+    color: darkblue;
+}
+
+body table {
+    background-color: white;
 }

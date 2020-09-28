@@ -1,0 +1,73 @@
+* {
+    background-color: pink;
+    font-family: 'Apple Chancery', cursive;
+}
+
+nav {
+    display: flex;
+    padding: 1vw;
+}
+
+ul {
+    font-size: 3vh;
+    display: flex;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(253, 77, 200);
+}
+
+h1 {
+    color: rgb(117, 12, 70);
+    padding: 2vw;
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.imgindex {
+    height: 400px;
+    width: 1500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centralizar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pcentro {
+    text-align: center;
+    font-size: 3vh;
+}
+
+p {
+    font-size: 3vh;
+    text-align: justify;
+}
+
+#tabela {
+    font: 100% sans-serif;
+    background-color: solid rgb(75, 11, 19);
+    border-collapse: collapse;
+    empty-cells: show;
+    border: 4px solid rgb(75, 11, 19);
+    margin: 0 auto;
+    }
+
+#tabela td {
+    width:150px;
+    height:150px;
+    padding:10px;
+    }
+
+h2 {
+    text-align: center;
+}

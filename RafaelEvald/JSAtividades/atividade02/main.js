@@ -2,16 +2,17 @@ const calc = document.querySelector('.calcular');
 const limpar = document.querySelector('.limpar');
 
 calc.addEventListener("click", () => {
-  let resultado = document.querySelector(".resut");
-  let num = 0;
+  var soma = 0;
+  let resut = document.querySelector(".resut");
+  
   for (n = 1; n <= 100; n++){
-    num = num + n;
+    soma = soma + n;
   }
-  console.log(num)
-  resultado.innerHTML = `O resultado é: ${num}`;  
+
+  resut.innerHTML = `O resultado é: ${soma}`;  
 })
 
 limpar.addEventListener('click', () => {
-  let resultado = document.querySelector(".resut");
-  resultado.innerHTML = `O resultado é: ??? `;  
+  let resut = document.querySelector(".resut");
+  resut.innerHTML = `O resultado é: ??? `;  
 })

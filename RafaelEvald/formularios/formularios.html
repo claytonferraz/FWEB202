@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <form action="processo.php">
+    <p>
+      <strong> O que você achou do site? </strong>
+      <dl>
+        <dd>
+          <input type="radio" name="avaliacao" value="muitobom" checked> Muito Bom
+
+          <input type="radio" name="avaliacao" value="bom"> Bom
+          <input type="radio" name="avaliacao" value="regular"> Regular
+          <input type="radio" name="avaliacao" value="umlixo"> Um Lixo
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <strong> Qual a seção que você mais gostou? </strong>
+      <dl>
+        <dd>
+          <select name="secao" size="1">
+            <option value="">Selecione uma opcão</option>
+            <option value="emcartaz">Em cartaz</option>
+            <option value="trilhasonora">Trilha Sonora</option>
+            <option value="fotos">Galeria de Fotos</option>
+            <option value="bilheteria">Bilheteria</option>
+            <option value="outra">Outra</option>
+          </select>
+          Outra: <input type="text" size="26" maxlength="256" name="outra">
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <strong>Digite seus cometários no campo abaixo</strong>
+      <dl>
+        <dd>
+          <textarea name="comentarios" rows="5" cols="42"></textarea>
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <strong>Diga-nos como entrar em contato com você: </strong>
+      <dl>
+        <dd>
+          <pre>
+            Nome: <input type="text" size="35" maxlength="256" name="nome">
+            E-mail: <input type="email" size="35" maxlength="256" name="email">
+            Fone: <input type="text" size="35" maxlength="256" name="fone">
+          </pre>
+        </dd>
+      </dl>
+      <dl>
+        <dd>
+          <input type="checkbox" name="novidades" value="nov">Quero receber novidades do site por e-mail?
+        </dd>
+      </dl>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar dados">
+      <input type="reset" value="Limpar o formulario">
+    </p>
+  </form>
+</body>
+</html>

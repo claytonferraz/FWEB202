@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Administrativo - Termômetro Inteligente</title>
+    <link rel="apple-touch-icon" href="imagens/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="imagens/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="imagens/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="imagens/favicons/manifest.json">
+    <link rel="mask-icon" href="imagens/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="imagens/favicons/favicon.ico">
+    <meta name="msapplication-config" content="imagens/favicons/browserconfig.xml">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script defer src="js/all.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+    function drawChart() 
+    {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Hora');
+        data.addColumn('number', 'Laboratório');          
+        data.addColumn('number', 'Laboratório');
+        data.addColumn('number', 'Freezer de sorvetes');
+
+        data.addRows([
+        [1,  37.8, 80.8, 41.8],
+        [2,  30.9, 69.5, 32.4],
+        [3,  25.4,   57, 25.7],
+        [4,  11.7, 18.8, 10.5],
+        [5,  11.9, 17.6, 10.4],
+        [6,   8.8, 13.6,  7.7],
+        [7,   7.6, 12.3,  9.6],
+        [8,  12.3, 29.2, 10.6],
+        [9,  16.9, 42.9, 14.8],
+        [10, 12.8, 30.9, 11.6],
+        [11,  5.3,  7.9,  4.7],
+        [12,  6.6,  8.4,  5.2],
+        [13,  4.8,  6.3,  3.6],
+        [14,  4.2,  6.2,  3.4]
+        ]);
+
+        var options = 
+        {
+            chart: {
+            title: '',
+            subtitle: ''
+        },
+        width: 900,
+        height: 500,
+        axes: 
+        {
+            x: 
+            {
+            0: {side: 'top'}
+            }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="sidebar-toggle text-lith mr-3">
+            <span class="navbar-toggler-icon"></span>
+        </a>
+        <a class="navbar-brand" href="#">Termômetro Inteligente</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                        <img class="rounded-circle" src="imagens/usuario.png" width="20" height="20" />
+                        &nbsp;<span class="d-none d-sm-inline">Usuário</span>
+                    </a>
+                    <div class="dropdown-menu" dropdown-menu-lg-right aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" dropdown-menu-lg-right href="#"><i class="fas fa-user"></i> Perfil</a>
+                        <a class="dropdown-item" dropdown-menu-lg-right href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex">
+        <nav class="sidebar">
+            <ul class="list-unstyled">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li>
+                    <a href="#termometro" data-toggle="collapse">
+                        <i class="fas fa-temperature-low"></i> Termometros
+                    </a>
+                    <ul class="list-unstyled collapse" id="termometro">
+                        <li><a href="addTermometro.html"><i class="fas fa-plus-square"></i> Adicionar</a></li>
+                        <li><a href="listarTermometro.html"><i class="fas fa-clipboard-list"></i> Listar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#horario" data-toggle="collapse">
+                        <i class="fas fa-clock"></i> Horários de Leituras
+                    </a>
+                    <ul class="list-unstyled collapse" id="horario">
+                        <li><a href="addHorarios.html"><i class="fas fa-plus-square"></i> Adicionar</a></li>
+                        <li><a href="listarHorarios.html"><i class="fas fa-clipboard-list"></i> Listar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#telegram" data-toggle="collapse">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                    </a>
+                    <ul class="list-unstyled collapse" id="telegram">
+                        <li><a href="addChaID.html"><i class="fas fa-plus-square"></i> Adicionar</a></li>
+                        <li><a href="listarTelegram.html"><i class="fas fa-clipboard-list"></i> Listar</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="leituras.html"><i class="far fa-clipboard"></i> Leituras</a></li>
+                <li>
+                    <a href="#usuarios" data-toggle="collapse">
+                        <i class="fas fa-users"></i> Usuários
+                    </a>
+                    <ul class="list-unstyled collapse" id="usuarios">
+                        <li><a href="addUsuario.html"><i class="fas fa-plus-square"></i> Adicionar</a></li>
+                        <li><a href="listarUsuario.html"><i class="fas fa-clipboard-list"></i> Listar</a></li>
+                    </ul>
+                </li>
+                <li><a href="permissao.html"><i class="fas fa-key"></i> Permissões</a></li>
+                <li><a href="boletos.html"><i class="fas fa-file-invoice-dollar"></i> Boletos</a></li>
+                <br />
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Inicio da área de trabalho -->
+        <div class="content p-1">
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="mr-auto p-2">
+                        <h2 class="display-4 titulo">Dashboard</h2>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <!-- Inicio dos Cartões do dashboard-->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                <i class="fas fa-temperature-low fa-3x"></i>
+                                <h6 class="card-title">Termometros Ativos</h6>
+                                <h2 class="display-4">18</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <i class="fab fa-telegram fa-3x"></i>
+                                <h6 class="card-title">Telegam</h6>
+                                <h2 class="display-4">3</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <i class="fas fa-users fa-3x"></i>
+                                <h6 class="card-title">Usuários Ativos</h6>
+                                <h2 class="display-4">2</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                <i class="fas fa-dollar-sign fa-3x"></i>
+                                <h6 class="card-title">Inadimplência</h6>
+                                <h2 class="display-4">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fim dos cartões-->
+                </div>
+                <body>
+                    <div id="line_top_x"></div>
+                </body>
+            </div>
+        </div>
+        <!-- Fim da área de trabalho -->
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

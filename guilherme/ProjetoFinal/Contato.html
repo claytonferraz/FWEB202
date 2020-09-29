@@ -4,6 +4,31 @@
         <meta charset="utf-8">
 
         <title> CONTATO</title>
+        <script>type ="text/javascript"
+            function form_contato(){
+                var nome = formcontato.nome.value;
+                var email = formcontato.email.value; 
+                var mesage = formcontato.mesage.value;
+               
+    
+                if(nome == ""){
+                    alert("Campo nome é obrigatório!");
+                    formcontato.nome.focus();
+                    return false;
+                }
+                if(email== ""){
+                    alert("Campo email é obrigatório!");
+                    formcontato.email.focus();
+                    return false;
+                }
+                if(mesage == ""){
+                    alert("Campo mensagem é obrigatório!");
+                    formcontato.mesage.focus();
+                    return false;
+                }
+               
+            }
+            </script>
         <link rel="stylesheet" href="css/style.css">
     
         
@@ -15,25 +40,31 @@
                  <ul>
                     <img src="Imagens/Logo G.A.jpeg" width="50px" height="50px">
                      <li><a href="inicio.html">Pagina Inicial</a></li>
-                     <li><a href="Carrinho.html">Carrinho</a></li>
-                     <li><a href="Contato.html">Contato</a></li>
                      <li><a href="Cadastro.html">Cadastro</a></li>
+                     <li><a href="intens.html">Intens mais vendidos</a></li>
                      <li><a href="Sobre.html">Sobre</a></li>
+                     <li><a href="Contato.html">Contato</a></li>
                  </ul>
             </div>        
 
             <section class= "content">
                 <div class="contato">
                     <h3>Formulário de contato</h3>
-                    <form class="form" method="POST" action="./email.php" >
-                        <input class="field" name="name" placeholder="Nome">
+                    <form name="formcontato"class="form" method="POST" action="contato" >
+                        <input class="field" name="nome" placeholder="Nome">
                         <input class="field" name="email" placeholder="Email">
                         <textarea class="field" name="mesage" placeholder="Digete sua mensagens aqui."></textarea>
-                        <input class = "field" type="submit" value="Enviar">
+                        <input class = "field" type="submit" value="Enviar" onclick="return form_contato()">
+                        
                         
                     </form>
                 </div>
             </section>
+            <div class="rodape">
+                <p><footer>
+                 <div>Copyrigth &copy;Guilherme Andrade - 2020 </div>
+              </footer></p>
+            </div>
 
         </body>
     

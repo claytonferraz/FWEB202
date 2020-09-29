@@ -2,19 +2,40 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: lightgray;
 
 }
 #rodape{
-    
+    background-color:  #FF6347 ;
     float: left;
     width: 100%; 
     height: 300px;
     
 }
 
-.rodape{text-align: center; font-size: 16; color: #333}
+.rodape{text-align: center; font-size: 16; color: #333; background-color: #FF6347 ;}
 
+.tabelaTitulo{
+    background-color: lavender;
+    text-align: center;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 
+}
+.tabelalinhas{
+    background-color: rgb(240, 169, 169);
+    text-align: center;
+    height: 30px;
+    color: black;
+    font-weight
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
 #menu{
 }
 

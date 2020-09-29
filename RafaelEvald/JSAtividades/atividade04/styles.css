@@ -1,0 +1,15 @@
+.container p {
+  font-size: 1.5em;
+}
+.entrada-dados {
+  width: 90%;
+  margin: 0 auto;
+}
+.entrada-dados input {
+  font-size: 1.5em;
+  margin-top: 0.5%;
+  width: 90%;
+}
+.container button {
+  font-size: 1.5em;
+}

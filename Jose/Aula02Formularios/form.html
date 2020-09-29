@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulários - HTML</title>
+<meta charset="utf-8">
+
+</head>
+<body>
+    <form action="receber_dados.php" method="post">
+<p>
+    Digite seu E-mail:
+    <input type="text" name="email" size="20">
+</p>
+<p>
+    <input type="submit" value="Enviar" name="enviar">
+</p>
+<p>Escolaridade:
+<select name"escolaridade">
+    <option value="em">Ensino Médio</option>
+    <option value="nt">Nível Técnico</option>
+    <option value="ns">Nível Superior</option>
+</select>
+</p>
+</form action="processa.php">
+<p>
+<strong>O que você achou do site??</strong>
+<dl>
+    <dd>
+        <input type="radio" name="avaliacao" value="muitobom" checked>muito bom
+        <input type="radio" name="avaliacao" value="bom" checked>Bom
+        <input type="radio" name="avaliacao" value="regular" checked>Regular
+        <input type="radio" name="avaliacao" value="umlixo" checked>Um Lixo
+    </dd>
+</dl>
+</p>
+
+<p>
+    <strong>Qual a seção que você mais gostou??</strong>
+    <dl>
+        <dd>
+            <select name="secao" size"1">
+                <option value="emcartaz">Em cartaz</option>
+                <option value="trilhasonora">Trilha Sonora</option>
+                <option value="fotos">Galeria de Fotos</option>
+                <option value="bilheteria">Bilheteria</option>
+                <option value="outra">Outra</option>
+            </select>
+            Outra:<input type="text" size="26" maxlength="256" name="outra">
+        </dd>
+    </dl>
+</p>
+
+<p>
+    <strong>Digite seus comentários no campo abaixo:</strong>
+    <dl>
+        <dd>
+            <textarea name="comentários" rows="5" cols="42"></textarea>
+        </dd>
+    </dl>
+</p>
+<p>
+    <strong>Diga-nos como entrar em contato com você:</strong>
+    <dl>
+        <dd>
+        <pre>
+            Nome <input type="text" size="35" maxlength="256" name="nome">
+            E-mail <input type="text" size="35" maxlength="256" name="email">
+            Fone <input type="text" size="35" maxlength="256" name="fone">
+        </pre>
+    </dd>
+    </dl>
+   <dl>
+       <dd>
+        <input type="checkbox" name="novidades" value="nov">Quero receber as novidades do site por e-mail
+       </dd>
+   </dl>
+</p>
+    <p>
+        <input type="submit" value="Enviar Dados">
+        <input type="reset" value="Limpar Formulário">
+    </p>
+</form>
+
+</body>
+
+</html>

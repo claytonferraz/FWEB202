@@ -4,6 +4,74 @@
         <meta charset="utf-8">
 
         <title> CADASTRO</title>
+        <script>type ="text/javascript"
+        function validar_form_cadastro(){
+            var nome = formcadastro.nome.value;
+            var datanasc = formcadastro.datanasc.value;
+            var telefone =  formcadastro.telefone.value;
+            var email = formcadastro.email.value;
+            var senha = formcadastro.senha.value;
+            var estado = formcadastro.estado.value;
+            var cidade = formcadastro.cidade.value;
+            var rua = formcadastro.rua.value;
+            var numero = formcadastro.numero.value;
+            var bairro = formcadastro.bairro.value;
+
+            if(nome == ""){
+                alert("Campo nome é obrigatório!");
+                formcadastro.nome.focus();
+                return false;
+            }
+            if(datanasc == ""){
+                alert("Campo Data de nascimento é obrigatório!");
+                formcadastro.datanasc.focus();
+                return false;
+            }
+            if(email == ""){
+                alert("Campo email é obrigatório!");
+                formcadastro.email.focus();
+                return false;
+            }
+            if(senha == ""){
+                alert("Campo senha é obrigatório!");
+                formcadastro.senha.focus();
+                return false;
+            }
+            if(estado == ""){
+                alert("Campo estado é obrigatório!");
+                formcadastro.estado.focus();
+                return false;
+            }
+            if(cidade == ""){
+                alert("Campo cidade é obrigatório!");
+                formcadastro.cidade.focus();
+                return false;
+            }
+            if(rua == ""){
+                alert("Campo rua é obrigatório!");
+                formcadastro.rua.focus();
+                return false;
+            }
+            if(numero == ""){
+                alert("Campo numero é obrigatório!");
+                formcadastro.numero.focus();
+                return false;
+            }
+            if(bairro == ""){
+                alert("Campo bairro é obrigatório!");
+                formcadastro.bairro.focus();
+                return false;
+            }
+            if(telefone == ""){
+                alert("Campo telefone é obrigatório!");
+                formcadastro.telefone.focus();
+                return false;
+            }
+
+        }
+        </script>
+
+
         <link rel="stylesheet" href="css/style.css">
        
         
@@ -14,11 +82,11 @@
             <div id = "menu">
                  <ul>
                     <img src="Imagens/Logo G.A.jpeg" width="50px" height="50px">
-                     <li><a href="inicio.html">Pagina Inicial</a></li>
-                     <li><a href="Carrinho.html">Carrinho</a></li>
-                     <li><a href="Contato.html">Contato</a></li>
-                     <li><a href="Carrinho.html">Cadastro</a></li>
-                     <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="inicio.html">Pagina Inicial</a></li>
+                    <li><a href="Cadastro.html">Cadastro</a></li>
+                    <li><a href="intens.html">Intens mais vendidos</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
                  </ul>
             </div>    
 
@@ -26,15 +94,20 @@
             <section class= "content">
                 <div class="contato">
                     <h3>Cadastro de cliente</h3>
-                    <form class="form" method="POST" action="./email.php" >
-                        <input class="field" name="name" placeholder="Nome"><br/>
+                    <form name="formcadastro" class="form" method="POST" action="salvar dados" >
+                        <input class="field" name="nome" placeholder="Nome"><br/>
+                        <input class="field" name="datanasc" placeholder="Digite sua Data de nascimento"><br/>
+                        <input class="field" name="telefone" placeholder="Telefone"><br/>
                         <input class="field" name="email" placeholder="Email"><br/>
                         <input class="field" required="required" placeholder="Digite sua senha" type="password" ><br/>
-                        <input class="field" name="cidade" placeholder="Digete sua cidade"><br/>
                         <input class="field" name="estado" placeholder="Digete seu estado"><br/>
-                        <input class="field" id= "noticias" type="checkbox">
-                        Deseja receber e-mails promocionais e notificações?</label>
-                        <input class = "field" type="submit" value="CADASTRAR">
+                        <input class="field" name="cidade" placeholder="Digete sua cidade"><br/>
+                        <input class="field" name="rua" placeholder="Digete sua rua"><br/>
+                        <input class="field" name="numero" placeholder="Digete o numero da casa"><br/>
+                        <input class="field" name="bairro" placeholder="Digite seu bairro"><br/>
+                        <input class="field" id= "noticias" type="checkbox" >Deseja receber e-mails promocionais e notificações? <br>   
+                        </br>
+                        <input class = "field" type="submit" value="CADASTRAR" onclick="return validar_form_cadastro()">
                         
                         
                     </form>
@@ -43,6 +116,11 @@
             
             </form>
             
+            <div class="rodape">
+                <p><footer>
+                 <div>Copyrigth &copy;Guilherme Andrade - 2020 </div>
+              </footer></p>
+            </div>
         </body>
     
 </html>

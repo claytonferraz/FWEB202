@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: darkmagenta;
+}
+
+#menu ul{
+     margin: 0;
+     background-color: fuchsia;
+     list-style: none;
+}
+
+#menu ul li{
+ display: inline;   
+
+}
+ 
+#menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+
+}
+
+#menu ul li a:hover{
+    color: darkblue;
+}
+
+body table {
+    background-color: white;
+}
+
+body footer{
+    background-color: fuchsia;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+}
+body h3 {
+    text-align: center;
+}
+
+body h3 a{
+    text-decoration: none;
+    color:white
+}
+
+body a{
+    text-decoration: none;
+    color:white
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <h1>Mostra apenas nomes com quatro ou menos caracteres:</h1>
+    <br>
+    <button id="botao">Mostrar</button>
+    <form name="formulario" action="action.php">
+
+        
+    </form>
+    <p id="resultado">Resultado</p>
+
+    <script type="text/javascript">
+        var resultado = document.getElementById('resultado');
+        for(i = 0; i<=100; i++){
+            soma = soma + i;
+        }
+        var botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function(){
+            resultado.innerHTML = soma;
+        })
+        
+    </script>
+</body>
+</html>

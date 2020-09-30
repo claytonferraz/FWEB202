@@ -6,8 +6,9 @@ $txt =
  "\nGênero: ". $_POST["gender"].
  "\nIdade: ". $_POST["age"].
  "\nContato: " .$_POST["number"].
- "\nConteudo: " . $_POST["comment"];
+ "\nConteudo: " . $_POST["content"];
 $headers = "From: " . $_POST["email"];
 
 mail($to,$subject,$txt,$headers);
+include("https://diegopaiva.dev.br#contato-container");
 ?> 

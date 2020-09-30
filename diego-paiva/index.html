@@ -97,42 +97,42 @@
             </div>
         </div>
         <div class="contato-holder">
-            <form method="post" action="email.php" onsubmit="return validateForm()">
+            <form name="form-contato" method="post" action="./email.php" onsubmit="return validateForm()">
                 <h4>Através de
                     E-Mail</h4>
-                <div class="flex-column input">
-                    <label for="name">Nome</label>
-                    <input class="input" type="text" name="name" required>
+                <div class="input-holder">
+                    <input class="iClass" type="text" name="name" required>
+                    <label class="lClass" for="name">Nome</label>
                 </div>
-                <div class="flex-column input">
-                    <label for="age">Idade</label>
-                    <input class="input" type="number" name="age" required>
-                </div>
-                <div class="flex-column input">
-                    <label for="gender">Gênero</label>
+                <!-- <div class="input-holder">
+                    <input class="iClass" type="number" name="age" required>
+                    <label class="lClass" for="age">Idade</label>
+                </div> -->
+                <!-- <div class="input-holder">
                     <select name="gender" required>
                         <option value="masc">Masculino</option>
                         <option value="fem">Feminino</option>
                         <option value="nor">Prefiro não dizer</option>
                     </select>
+                    <label class="lClass" for="gender">Gênero</label>
+                </div> -->
+                <div class="input-holder">
+                    <input class="iClass" type="tel" name="number" required>
+                    <label class="lClass" for="name">Celular</label>
                 </div>
-                <div class="flex-column input">
-                    <label for="name">Celular</label>
-                    <input class="input" type="tel" name="number" required>
+                <div class="input-holder">
+                    <input class="iClass" type="mail" name="email" required>
+                    <label class="lClass" for="mail">E-Mail</label>
                 </div>
-                <div class="flex-column input">
-                    <label for="mail">E-Mail</label>
-                    <input class="input" type="mail" name="email" required>
+                <div class="input-holder">
+                    <input class="iClass" type="text" name="subject" required>
+                    <label class="lClass" for="subject">Assunto</label>
                 </div>
-                <div class="flex-column input">
-                    <label for="subject">Assunto</label>
-                    <input class="input" type="text" name="subject" required>
+                <div class="input-holder-content">
+                    <textarea class="iClass" name=content rows=”10″ cols=”20″ required></textarea>
+                    <label class="lClass" for="content">Descreva a sua ideia!</label>
                 </div>
-                <div class="flex-column input">
-                    <label for="comment">Descreva a sua ideia!</label>
-                    <textarea name=comment rows=”6″ cols=”20″>
-                    </textarea>
-                </div>
+                <div id="error"></div>
                 <button class="button submit-button" type="submit">Enviar</button>
             </form>
         </div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula Formulários</title>
+</head>
+<body>
+    <form action="processa.php">
+        <p>
+            <strong>O que você achou do site?</strong>
+            <dl>
+                <dd>
+                <input type="radio" name="avaliacao" value="muitobom" checked>Muito Bom    
+                <input type="radio" name="avaliacao" value="bom">Bom  
+                <input type="radio" name="avaliacao" value="regular">Regular  
+                <input type="radio" name="avaliacao" value="ruim">Ruim  
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <Strong>Qual sua seção favorita?</Strong>
+            <dl>
+                <dd>
+                    <select name="secao" size="1">
+                        <option value="emcartaz">Em cartaz</option>
+                        <option value="trilhasonora">Trilha Sonora</option>
+                        <option value="fotos">Fotos</option>
+                        <option value="bilheteria">Bilheteria</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    Outra: <input type="text" size="26" maxlength="256" name="outra">
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <strong>Digite um comentário abaixo: </strong>
+        <dl>
+            <dd>
+                <textarea name="comentarios" cols="42" rows="5"></textarea>
+            </dd>
+        </dl>
+        </p>
+        <p>
+            <strong>Diga-no como entrar em contato com você:</strong>
+            <dl>
+                <dd>
+                    <pre>
+                        Nome: <input type="text" name="nome" maxlength="256" size="35">
+                        Email: <input type="text" name="email" maxlength="256" size="35">
+                        Fone: <input type="text" name="fone" maxlength="256" size="35">
+                    </pre>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <input type="checkbox" name="novidades" value="nov">Quero receber atualizações.
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Formulários,">
+        </p>
+    </form>
+</html>

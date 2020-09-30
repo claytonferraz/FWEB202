@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fale Conosco</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="principal.css">
+    </head>
+
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="pagina2.html">Cadastros</a></li>
+                <li><a href="pagina3.html">Fale Conosco</a></li>
+                <li><a href="pagina4.html">Séries</a></li>
+                <li><a href="pagina5.html">Cabelos Cacheados</a></li>
+            </ul>
+        </div>
+
+        <form align="center">
+            <p>
+                <strong>O que você achou do site??</strong>
+                <dl>
+                    <dd>
+                        <input type="radio" name="avaliacao" value="muitobom" checked>Muito Bom
+                        <input type="radio" name="avaliacao" value="bom">Bom
+                        <input type="radio" name="avaliacao" value="regular">Regular
+                        <input type="radio" name="avaliacao" value="umlixo">Um Lixo
+                    </dd>
+                </dl>
+                
+            </p>
+            <p>
+                <strong>Qual a página que você mais gostou??</strong>
+                <dl>
+                    <dd>
+                        <select name="pagina" size="1">
+                            <option value="index">Página Principal</option>
+                            <option value="pagina2">Cadastros</option>
+                            <option value="pagina3">Fale Conosco</option>
+                            <option value="pagina4">Séries</option>
+                            <option value="pagina5">Cabelos Cacheados</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                        Outra <input type="text" size="26" maxlength="256" name="outra">
+                    </dd>
+                </dl>
+            </p>
+    
+            <p>
+                <strong>Digite seus comentários no campo abaixo:</strong>
+                <dl>
+                    <dd>
+                        <textarea name="cometarios" rows="5" cols="42"></textarea>
+                    </dd>
+                </dl>
+            </p>
+    
+        <p><h3>
+<strong>Insira seus dados pessoais:</strong>
+    <dl>
+        <dd>
+        <pre>
+        Nome     <input type="text" size="35" maxlength="256" name="nome" required>
+        Sobrenome<input type="text" size="35" maxlength="256" name="sobrenome"requerid>
+        E-mail   <input type="email"size="35" maxlength="256" name="email" required>
+        Fone     <input type="text" size="35" maxlength="256" name="fone"requerid>
+        Cidade   <input type="text" size="35" maxlength="256" name="cidade">
+        Idade    <input type="text" size="35" maxlength="256" name="idade">
+        Sexo     <input type="radio" name="sexo" valeu="F" checked/>Feminino <input type="radio" name="sexo" valeu="M" />Masculino
+        </pre>
+        </dd>
+    </dl>
+                <dl>
+                    <dd>
+                        <input type="checkbox" name="novidades" value="nov">Quero receber as novidades do site por e-mail
+                    </dd>
+                </dl>
+            </p></h3>
+    
+            <p>
+                <input type="submit" value="Enviar Dados">
+                <Input type="reset" value="Limpar Formulário">
+            </p>
+        
+    
+            </form>
+
+            <footer>
+                <div>Copyright &copy; Beatriz Oliveira - 2020 </div>
+            </footer>
+    </body>
+</html>

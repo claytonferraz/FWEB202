@@ -1,0 +1,129 @@
+  
+     
+   body
+   {
+       margin: 0;
+       padding: 0;
+       color: #333;
+       background-color: #eee;
+       font: 150% "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+   }
+   
+   hr
+   {
+       height: 0;
+       margin-top: 1em;
+       margin-bottom: 2em;
+       border: 0;
+       border-top: 1px solid #ddd;
+   }
+   
+   p{
+       text-align: justify;
+       margin-right: 2%;
+       margin-left: 2%;
+   }
+   h1{font-size: 50px;}
+   h2{font-size: 40px;}
+   h3{font-size: 30px;}
+   h4{font-size: 20px;}
+   h1, h2, h3, h4{margin-left: 1em;}
+   p{
+       width: 50%;
+       font-size: 30em;
+   }
+   span {
+       font-size:200%
+        }
+    <div>
+        Text
+
+   
+   /* -----------------------
+   Nav ou Menu
+   ------------------------*/
+   
+   .nav
+   {
+   
+       height: 60px;
+       background-color:  rgb(214, 211, 211); 
+   }
+   
+   .nav ul
+   {
+       list-style: none;
+       height: 20px;
+       padding:15px 0 0 0;
+   }
+   
+   .nav li
+   {
+       display: inline;
+   }
+   
+   .nav a
+   {
+       padding: 15px 20px 16px 20px;
+       color: #000;
+       text-decoration: none;
+       border-bottom: 1px solid gray;
+   }
+   
+   .nav a:link { 
+       color: rgb(41, 41, 44);
+       background-color: rgb(214, 211, 211); 
+   }
+   
+   .nav a:focus
+   {
+       color: black;
+       background-color: white;
+   }
+   
+   .nav a:hover
+   {
+       color: white;
+       background-color: rgb(141, 139, 139);
+   }
+   
+   .nav a:active
+   {
+       color: white;
+       background-color: black;
+   }
+   
+   /* -----------------------
+   Estilo Geral
+   ------------------------*/
+   
+   .img-responsive { 
+       max-width: 100%; 
+       border: 1px solid gray;
+       box-shadow: 1px 1px 4px 1px black;
+   }
+   
+   #topo{
+       height:200px;
+       background-color: rgb(218, 212, 212);
+   }	
+   
+   #pagina{
+   
+       background: #FFF;
+       width: 1000px;
+       margin: 0px;
+   
+   } 
+   
+   #rodape
+   {
+       color: #fff;
+       background: #000;
+       width: 100%;
+           
+   }
+   
+   .text_rodape{
+       text-align: center;
+   }

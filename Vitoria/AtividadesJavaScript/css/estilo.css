@@ -1,0 +1,24 @@
+* {
+    background-color: rgb(203, 223, 230);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.exemplo2 {
+    background-color: indigo;
+    color: white;
+    width: 150px;
+    height: 50px;
+    padding: 40px;
+}
+
+P {
+    font-size: 3vh;
+}
+
+div {
+    font-size: 3vh;
+}
+
+h1 {
+    text-align: center;
+}

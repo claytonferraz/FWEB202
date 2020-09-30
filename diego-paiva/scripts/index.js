@@ -26,5 +26,31 @@ function setDateCopyright() {
     date.innerHTML = new Date().getFullYear();
 }
 
+function validateForm() {
+    const form = document.getElementsByClassName("iClass");
+    const error = document.getElementById('error');
+    if ("" == form.name.value) {
+        error.innerHTML = "Por favor, preencha o campo Nome"
+        return false;
+    }
+    if ("" == form.number.value) {
+        error.innerHTML = "Por favor, preencha o campo Celular"
+        return false;
+    }
+    if ("" == form.email.value) {
+        error.innerHTML = "Por favor, preencha o campo Email"
+        return false;
+    }
+    if ("" == form.subject.value) {
+        error.innerHTML = "Por favor, preencha o campo Assunto"
+        return false;
+    }
+    if ("" == form.content.value) {
+        error.innerHTML = "Por favor, preencha o campo Conteudo"
+        return false;
+    }
+
+    return true;
+}
 setDateCopyright();
 setPortfolioData();

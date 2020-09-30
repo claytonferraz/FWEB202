@@ -102,3 +102,19 @@ function ValidarCpf(){
         alert('Cpf inválido!')
     }
 }
+
+function Comp_ativo(){
+    var btn = document.getElementById('custom').style
+    btn.color = "white";
+    btn.backgroundColor = "green";
+}
+
+function Comp_inativo(){
+    var btn = document.getElementById('custom').style
+    btn.color = "black";
+    btn.backgroundColor = "transparent";
+}
+
+function DuploClick(){
+    alert('Da leite nao filho')
+}

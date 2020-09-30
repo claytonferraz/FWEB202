@@ -34,3 +34,14 @@ function SomaEMedia(){
     resultSoma.value = soma
     resultMedia.value = media 
 }
+
+function Nomes4Letras(){
+    var nomes = document.getElementsByName('nome')
+    var result, resultado = document.getElementById('resultado')
+    for(var i = 0; i < 10; i++){
+        var nome = nomes[i].value
+        if(nome.length == 4)
+            result = `${result} - ${nome}`
+    }
+    resultado.innerText = `Resultado: ${result}`
+}

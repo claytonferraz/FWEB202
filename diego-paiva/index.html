@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, intial-scale=1.0' />
+    <title>
+        Diego Paiva - Desenvolvedor
+    </title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script src="https://kit.fontawesome.com/f5856ca7f2.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='./css/index.css' />
+    <script src='./scripts/index.js' defer></script>
+</head>
+
+<body>
+    <div class="section" id="header-container">
+        <div class="logo-holder"><img class="logo" src="./img/logo.png" /></div>
+        <div class="menu-holder">
+            <button class="button menu-button" onclick="window.location.href='#'">Inicio</button>
+            <button class="button menu-button" onclick="window.location.href='#sobre-container'">Sobre</button>
+            <button class="button menu-button" onclick="window.location.href='#portfolio-container'">Portifólio</button>
+            <button class="button menu-button" onclick="window.location.href='#precos-container'">Preços</button>
+            <button class="button menu-button" onclick="window.location.href='#contato-container'">Contato</button>
+        </div>
+    </div>
+    <div class="section" id="first-container">
+        <h2>Ajudando o <font color="#01a0bd">seu negócio</font><br>
+            a ter <font color="#01a0bd">presença online.</font>
+        </h2>
+    </div>
+    <div id="wave">
+        <div id="sobre-container">
+            <div class="about-holder">
+                <h1>Sobre</h1>
+                Sou um programador inciando minha carreira na parte de desenvolvimento de web. A idea de se
+                profissionalizar
+                na área foi a falta de mercado atual na minha região de maneira efetiva, a ideia da empresa é transmitir
+                confiança e um serviço de qualidade por um preço justo, assim qualquer pessoa pode adquirir.
+            </div>
+            <div class="img-holder">
+                <img class="img-sobre img-maior" src="./img/maior.png" alt="">
+                <img class="img-sobre img-profile" src="./img/profile.jpg" alt="" style="opacity:0;">
+                <img class="img-sobre img-parents" src="./img/parents.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section flex-column" id="portfolio-container">
+        <h1>Portfolio</h1>
+        <div id="portfolio-target">
+        </div>
+    </div>
+    <div class="section flex-column" id="precos-container" style="color:white;">
+        <h1>Preços</h1>
+        <div class="precos-holder">
+            <table>
+                <tr>
+                    <th>Tipos</th>
+                    <th>Preços ( Sem identidade visual )</th>
+                    <th>Preço ( Com identidade Visual )</th>
+                    <th>Estimativa</th>
+                </tr>
+                <tr>
+                    <td>Landing page</td>
+                    <td>500$</td>
+                    <td>800$</td>
+                    <td>3 Dias</td>
+                </tr>
+                <tr>
+                    <td>Setup Vendas</td>
+                    <td>1500$</td>
+                    <td>1900$</td>
+                    <td>7 Dias</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section" id="contato-container">
+        <div class="social-holder">
+            <h1>Contato</h1>
+            <span>Aqui estão algumas opções.<br>
+                O bom e velho e-mail pode ser preenchido ao lado.</span>
+            <div class="menu-socials">
+                <button class="button social-button" onclick="window.location.href='https://wa.me/5569993487000'">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+                <button class="button social-button"
+                    onclick="window.location.href='https://www.instagram.com/paiva.dev'">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button class="button social-button" onclick="window.location.href='https://m.me/paiva.dev'">
+                    <i class="fab fa-facebook"></i>
+                </button>
+                <button class="button social-button" onclick="window.location.href='https://behance.net/diegopaiva2'">
+                    <i class="fab fa-behance"></i>
+                </button>
+            </div>
+        </div>
+        <div class="contato-holder">
+            <form method="post" action="email.php" onsubmit="return validateForm()">
+                <h4>Através de
+                    E-Mail</h4>
+                <div class="flex-column input">
+                    <label for="name">Nome</label>
+                    <input class="input" type="text" name="name" required>
+                </div>
+                <div class="flex-column input">
+                    <label for="age">Idade</label>
+                    <input class="input" type="number" name="age" required>
+                </div>
+                <div class="flex-column input">
+                    <label for="gender">Gênero</label>
+                    <select name="gender" required>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="nor">Prefiro não dizer</option>
+                    </select>
+                </div>
+                <div class="flex-column input">
+                    <label for="name">Celular</label>
+                    <input class="input" type="tel" name="number" required>
+                </div>
+                <div class="flex-column input">
+                    <label for="mail">E-Mail</label>
+                    <input class="input" type="mail" name="email" required>
+                </div>
+                <div class="flex-column input">
+                    <label for="subject">Assunto</label>
+                    <input class="input" type="text" name="subject" required>
+                </div>
+                <div class="flex-column input">
+                    <label for="comment">Descreva a sua ideia!</label>
+                    <textarea name=comment rows=”6″ cols=”20″>
+                    </textarea>
+                </div>
+                <button class="button submit-button" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="section footer">
+        <h4>Desenvolvido com muito carinho ♥ </h4>
+        <h5>Todos os direitos reservados ® - <span id="date"></span></h5>
+        <h6>Layout e identidade visual realizado por <a class="link-ref" href="https://williammelodesign.com.br">William
+                Melo</a></h6>
+    </div>
+    <button class="flex-column return-button" onclick="window.location.href='#'"><i
+            class="fas fa-chevron-up"></i></button>
+</body>

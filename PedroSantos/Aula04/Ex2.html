@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <h1>Mostra a  soma entre os numeros de 0 a 100:</h1>
+    <br>
+    <button id="botao">Mostrar</button>
+    <p id="resultado">Resultado</p>
+
+    <script type="text/javascript">
+        var soma = 0;
+        var resultado = document.getElementById('resultado');
+        for(i = 0; i<=100; i++){
+            soma = soma + i;
+        }
+        var botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function(){
+            resultado.innerHTML = soma;
+        })
+        
+    </script>
+</body>
+</html>

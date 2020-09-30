@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vitória's Atividades</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    </head>
+    <body onload="checarCookies()";>
+        <h1> Atividades </h1>
+        <h2>Atividade 01 - Exibir ímpares de 1 à 100</h2>
+        <p>
+            <input type="button" value="exiba" onclick="NumeroImpar()">
+        </p>
+        <div id="resultado1"></div>
+
+        <h2>Atividade 02 - Somar números de 1 à 100</h2>
+        <p>
+            <input type="button" value="somar" onclick="Soma1a100()">
+        </p>
+        <div id="resultado2"></div>
+
+        <h2>Atividade 03 - Soma e Média de 4 números</h2>
+        <form id="formulario1">
+            <p>
+                Digite o primeiro numero:
+                <input type="text" name="numero1" size="10">
+            </p>
+            <p>
+                Digite o segundo numero:
+                <input type="text" name="numero2" size="10">
+            </p>
+            <p>
+                Digite o terceiro numero:
+                <input type="text" name="numero3" size="10">
+            </p>
+            <p>
+                Digite o quarto numero:
+                <input type="text" name="numero4" size="10">
+            </p>
+            <p>
+                <input type="button" value="calcular" onclick="SomaMedia()">
+            </p>
+        </form>
+        <div id="resultado3"></div>
+        
+        <h2>Atividade 04 - Insira 10 nomes e mostre quais tem 4 letras</h2>
+        <form id="formulario2">
+            <p>Insira dez nomes:</p>
+            <p>
+                Digite o primeiro nome:
+                <input type="text" name="nome1" size="20">
+            </p>
+            <p>
+                Digite o segundo nome:
+                <input type="text" name="nome2" size="20">
+            </p>
+            <p>
+                Digite o terceiro nome:
+                <input type="text" name="nome3" size="20">
+            </p>
+            <p>
+                Digite o quarto nome:
+                <input type="text" name="nome4" size="20">
+            </p>
+            <p>
+                Digite o quinto nome:
+                <input type="text" name="nome5" size="20">
+            </p>
+            <p>
+                Digite o sexto nome:
+                <input type="text" name="nome6" size="20">
+            </p>
+            <p>
+                Digite o sétimo nome:
+                <input type="text" name="nome7" size="20">
+            </p>
+            <p>
+                Digite o oitavo nome:
+                <input type="text" name="nome8" size="20">
+            </p>
+            <p>
+                Digite o nono nome:
+                <input type="text" name="nome9" size="10">
+            </p>
+            <p>
+                Digite o décimo nome:
+                <input type="text" name="nome10" size="10">
+            </p>
+            <p>
+                <input type="button" value="mostre" onclick="ContarNome()">
+            </p>
+        </form>
+
+        <h2>Atividade 05 - Verificação de campos em branco em um cadastro</h2>
+        <form id="formulario3" method="post"
+        onSubmit="return ValidaForm();">
+            <p>
+                Digite seu primeiro nome:
+                <input type="text" name="nome" size="20">
+            </p>
+            <p>
+                Digite seu segundo nome:
+                <input type="text" name="nome2" size="20">
+            </p>
+            <p>
+                Digite sua data de nascimento:
+                <input type="date" name="data">
+            </p>
+            <p>
+                Qual seu sexo?
+                <dl>
+                    <dd>
+                        <input type="radio" name="sexo" value="feminino">Feminino
+                        <input type="radio" name="sexo" value="masculino">Masculino
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                Digite sua rua:
+                <input type="text" name="rua" size="20">
+            </p>
+            <p>
+                Digite o número da casa:
+                <input type="text" name="numero" size="20">
+            </p>
+            <p>
+                Digite seu bairro:
+                <input type="text" name="bairro" size="20">
+            </p>
+            <p>
+                Digite sua cidade:
+                <input type="text" name="cidade" size="20">
+            </p>
+            <p>
+                Digite seu estado:
+                <input type="text" name="estado" size="20">
+            </p>
+            <p>
+                <input type="submit" value="enviar" nome="enviar">
+            </p>
+        </form>
+
+        <h2>Atividade 06 - Verificação de usuário e senha</h2>
+        <form id="formulario4" method="post"
+        onSubmit="return ValidaForm4();">
+            <p>
+                Digite seu usuário:
+                <input type="text" name="usuario" size="20">
+            </p>
+            <p>
+                Digite sua senha:
+                <input type="password" name="senha" size="20">
+            </p>
+            <p>
+                Confirme sua senha:
+                <input type="password" name="senha2" size="20">
+            </p>
+            <p>
+                <input type="submit" value="enviar" nome="enviar">
+            </p>
+        </form>
+
+        <h2>Atividade 07 - Verificação de email e CPF</h2>
+        <form id="formulario5" method="post"
+        onSubmit="return ValidaForm5();">
+            <p>
+            Digite seu E-mail:
+            <input type="text" name="email" size="20">
+            </p>
+            <p>
+                Digite sua cpf:
+                <input type="text" name="cpf" size="15">
+            </p>
+            <p>
+                <input type="submit" value="enviar" nome="enviar">
+            </p>
+        </form>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h2>Atividade 08 - Exemplos de 5 eventos</h2>
+        <p><b>Exemplo de aplicação dos eventos ONFOCUS e ONBLUR:</b></p>
+        <input type="text" placeholder="informe o texto" id="valor" onblur="exemplo1()">
+        <div id="valor2"></div>
+
+        <br/>
+        <br/>
+        <br/>
+        <p><b>Exemplo dos eventos ONMOUSEOVER e ONMOUSEOUT:</b></p>
+        <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="exemplo2" id="mouseAlt">Passe o mouse</div>
+
+        <br/>
+        <br/>
+        <br/>
+        <p><b>Exemplo do evento ONLOAD:</b></p>
+        <div id="exemplo3"></div>
+
+        <script text="text/javascript" src="javascript/atividades.js"></script>
+    </body>
+</html>

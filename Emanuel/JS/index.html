@@ -1,14 +1,54 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>tarefa 1</title>
-    <script type>
-    var num;
-for (num = 0; num < 100; num++) {
-    num=num%2;
-    if(num%2==1)
-    print("num impar: %d",num)
-}
-    </script>
-</head>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>tarefas JS</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jscript.js"></script>
+    </head>
+    <body>
+        <ol>
+            <li>
+            <n>TAREFA 1</n></br>
+            <N>fazer um programa para mostrar os numeros impares ate o 100</N></br>
+            <n>aperte para execultar</n>
+            <div class="centralizar">
+                <input type="button" value="Executar" onclick="impares()">
+            </div>
+            <h2 id="impares"></h2>
+            </li>   
+
+            <li>
+            </br></br>
+                <n>TAREFA 2</n></br>
+                <N>fazer um programa para mostrar a soma dos numeros ate o 100</N></br>
+                <n>aperte para execultar</n>
+                <div class="centralizar">
+                    <input type="button" value="Executar" onclick="soma100()">
+                </div>
+                <h2 id="soma100"></h2>
+                </li>  
+
+                <li>
+                </br></br>
+                    <n>TAREFA 3</n></br>
+                    <N>fazer um programa para ler 4 numeros e mostrar a media dessesnumeros</N></br>
+                    <script>
+                        var n1 = parseInt(prompt("digite o primeiro numero"))
+                        var n2 =  parseInt(prompt("digite o segundo numero"))
+                        var n3 =parseInt(prompt("digite o terceiro numero"))
+                        var n4 =parseInt(prompt("digite o quatro numero"))
+                        var soma = parseInt(n1+n2+n3+n4)
+                        var media= parseInt(soma/4)
+                    </script>
+                    <n>aperte para execultar</n>
+                    <div class="centralizar">
+                        <input type="button" value="Executar" onclick="media1(n1,n2,n3,n4)">
+                    </div>
+                    <h2 id="media1"></h2>
+                    </li>  
+        </ol>
+    </body>
+
 </html>

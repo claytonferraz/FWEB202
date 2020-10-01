@@ -1,0 +1,59 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container p {
+  font-size: 1.5em;
+  text-align: justify;
+}
+.entrada-dados {
+  width: 90%;
+  margin: 0 auto;
+}
+.entrada-dados h3 {
+  font-size: 1.8em;
+  margin-bottom: -0.4%;
+}
+.entrada-dados div {
+  display: flex;
+}
+.sexo {
+  width: 30%;
+  align-items: center;
+  font-size: 1.3em;
+  margin-left: 1%;
+}
+.entrada-dados div input + input {
+  margin-left: 1%;
+}
+.entrada-dados input {
+  font-size: 1.5em;
+  margin-top: 0.5%;
+  width: 90%;
+}
+.container button {
+  font-size: 1.5em;
+}
+
+.reset {
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.aviso {
+  color: red;
+  margin-top: -2%;
+  display: none;
+}
+.ativ {
+  display: inline;
+  color: red;
+  margin-top: -2%;
+}
+.ati {
+  display: inline;
+  color: red;
+  margin-top: 1%;
+}

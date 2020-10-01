@@ -2,28 +2,49 @@ const cadast = document.querySelector('.cadastrar');
 const limpar = document.querySelector('.limpar');
 
 
-
 cadast.addEventListener('click', () => {
   let primNome = document.querySelector('.dadPriNome').value;
   let segNome = document.querySelector('.dadSegNome').value;
   let nascimento = document.querySelector('.nascimento').value;
-  let sex = document.querySelector('.sex').value;
+  let estado = document.querySelector('.estado').value;
+  let city = document.querySelector('.city').value;
+  let bairro = document.querySelector('.bairro').value;
+  let rua = document.querySelector('.rua').value;
+  let numero = document.querySelector('.numero').value;
 
   if((primNome.length) === 0){
     const teste = document.getElementById('alertNomePr')
     teste.className = 'ativ';
   }
+
   if((segNome.length) === 0){
     const test = document.getElementById('alertNomeSeg')
     test.className = 'ati';
   }
-
-
-  console.log(primNome.length)
-  console.log(segNome)
-  console.log(nascimento)
-  console.log(sex)
-
+  if((nascimento.length) === 0){
+    const test = document.getElementById('alertNascimento')
+    test.className = 'ati';
+  }
+  if((estado.length) === 0){
+    const test = document.getElementById('alertEstad')
+    test.className = 'ati';
+  }
+  if((city.length) === 0){
+    const test = document.getElementById('alertCity')
+    test.className = 'ati';
+  }
+  if((bairro.length) === 0){
+    const test = document.getElementById('alertBairro')
+    test.className = 'ati';
+  }
+  if((rua.length) === 0){
+    const test = document.getElementById('alertRua')
+    test.className = 'ati';
+  }
+  if((rua.length) === 0){
+    const test = document.getElementById('alertNum')
+    test.className = 'ati';
+  }
 
 });
 

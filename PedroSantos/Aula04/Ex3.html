@@ -7,24 +7,31 @@
 <body>
     <h1>Mostra apenas nomes com quatro ou menos caracteres:</h1>
     <br>
-    <button id="botao">Mostrar</button>
-    <form name="formulario" action="action.php">
+    <button id="botao">Somar</button>
+    <form name="formulario" action="action.php" method="POST">
+        Nome1: <input type="number" name="nome01"><br><br>
+        Nome2: <input type="number" name="nome02"><br><br>
+        Nome3: <input type="number" name="nome03"><br><br>
+        Nome4: <input type="number" name="nome04"><br><br>
 
-        
     </form>
     <p id="resultado">Resultado</p>
 
     <script type="text/javascript">
-        var resultado = document.getElementById('resultado');
-        for(i = 0; i<=100; i++){
-            soma = soma + i;
+        var media = 0;
+        var numero1 = document.getElementById('nome01');
+        numero1 = parseInt(numero1).value,10;
+        var numero2 = parseInt(document.getElementById('nome02').value, 10);
+        var numero3 = parseInt(document.getElementById('nome03').value, 10);
+        var numero4 = parseInt(document.getElementById('nome04').value, 10);
+        media = (numero1 + numero2 + numero4 + numero3);
         }
-        var botao = document.getElementById('botao');
-
-        botao.addEventListener('click', function(){
-            resultado.innerHTML = soma;
-        })
         
+        var botao = document.getElementById('botao');
+        botao.addEventListener('click', function()
+        {
+            alert("A média é de "+ media);
+        })
     </script>
 </body>
 </html>

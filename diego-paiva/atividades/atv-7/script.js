@@ -11,7 +11,6 @@ function validateForm() {
             return false;
         }
     }
-    console.log(form)
     if (!TestaCPF(form.cpf.value)) {
         erro.style.color = "red";
         erro.innerHTML = "CPF Invalido"
@@ -23,6 +22,8 @@ function validateForm() {
         return false;
     }
 
+    erro.style.color = "green";
+    erro.innerHTML = "Informaçoes foram verificadas e são verdadeiras"
     return true;
 
 }

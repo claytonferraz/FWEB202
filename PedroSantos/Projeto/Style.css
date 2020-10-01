@@ -123,3 +123,14 @@ padding-left:2%;
     width:640px;
     height: 360px;
 }
+.contato, form {
+    color: white;
+    font-size: 01.5rem;
+    padding-left: 30%;
+}
+.Titulo-contato{
+    padding-top: 60px;;
+    text-align: center;
+    color: #FF7474;
+    font-size: 8rem;    
+}

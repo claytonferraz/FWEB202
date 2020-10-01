@@ -45,3 +45,76 @@ function Nomes4Letras(){
     }
     resultado.innerText = `Resultado: ${result}`
 }
+
+function Cadastrar(){
+    var form = document.forms['cadastro']
+    var sexo = form.sexo.value
+
+    if(form.primeironome.value.trim().length == 0){
+        alert('Informe seu primeiro nome')
+    }
+    if(form.segundonome.value.trim().length == 0) {
+        alert('Informe seu segundo nome')
+    }
+    if(form.datanasc.value.trim().length == 0) {
+        alert('Informe sua data de nascimento')
+    }
+    
+}
+
+function ValidarSenha(){
+    var senha = document.querySelector('input#senha')
+    var confirmacaosenha = document.querySelector('input#confirmacaosenha')
+
+    if(senha.value.trim() != confirmacaosenha.value.trim()){
+        alert('Dados incorretos! senhas não conferem.')
+    }
+}
+
+function ValidarCpf(){
+    var cpf = document.querySelector('input#cpf').value
+    var inicioCpf = cpf.substr(0,9)
+    var finalCpf = cpf.substr(9,)
+    var val1 = 0, decresce = 10, val2 = 0, val3 = 0, val4 = 0
+
+    for(var i = 0; i < 10; i++){
+        var numcpf = inicioCpf.substr(i,1)
+        val1 += (Number(numcpf)) * decresce
+        decresce -= 1
+    }
+    val2 = val1 * 10 % 11
+    decresce = 11
+    inicioCpf = cpf.substr(0,10)
+    
+    if(val2 == finalCpf.substr(0,1)){   
+        for(var i = 0; i < 11; i++){
+            var numcpf = inicioCpf.substr(i,1)
+            val3 += (Number(numcpf)) * decresce
+            decresce -= 1
+        }
+        var val4 = val3 * 10 % 11
+        val5 = Number(finalCpf.substr(1,1))
+        
+        if((val4 != val5)){
+            alert('Cpf Inválido!')
+        }       
+    }else{
+        alert('Cpf inválido!')
+    }
+}
+
+function Comp_ativo(){
+    var btn = document.getElementById('custom').style
+    btn.color = "white";
+    btn.backgroundColor = "green";
+}
+
+function Comp_inativo(){
+    var btn = document.getElementById('custom').style
+    btn.color = "black";
+    btn.backgroundColor = "transparent";
+}
+
+function DuploClick(){
+    alert('Da leite nao filho')
+}

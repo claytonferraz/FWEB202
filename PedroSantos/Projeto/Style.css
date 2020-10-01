@@ -94,3 +94,43 @@ padding: 0 0 8em 0;
     padding-top: 2%;
 padding-left:2%;  
 }
+.project-container
+{
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    height:30rem;
+    margin-left: 5%;
+    margin-top:10%;
+}
+.project-holder {
+    max-width: 45rem;
+    font-size: 1.8rem;
+    color: white;
+}
+.project-holder h1 {
+    font-weight: bolder;
+    color: #FF7474;
+}
+.project-holder p
+{
+    padding: 5px;
+    margin-top: 10px;
+    margin: 5px;
+    
+}
+.img-project, img{
+    width:640px;
+    height: 360px;
+}
+.contato, form {
+    color: white;
+    font-size: 01.5rem;
+    padding-left: 30%;
+}
+.Titulo-contato{
+    padding-top: 60px;;
+    text-align: center;
+    color: #FF7474;
+    font-size: 8rem;    
+}

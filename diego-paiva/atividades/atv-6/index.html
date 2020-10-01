@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, intial-scale=1.0' />
+    <title>Atividade 6</title>
+    <link rel='stylesheet' href='./style.css' />
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+    <div id="alvo">
+        <label for="user">Usuario</label>
+        <input type="text" name="user" id="Usuario">
+
+        <label for="passwd">Senha</label>
+        <input type="password" name="passwd" id="Senha">
+
+        <label for="sPasswd">Confirmar senha</label>
+        <input type="password" name="sPasswd" id="Confirmar Senha">
+
+        <div id="erro"></div>
+        <button type="submit" onclick="validateForm()">Cadastrar</button>
+    </div>
+</body>

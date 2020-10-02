@@ -1,0 +1,130 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 0.33fr 2fr;
+}
+
+#sombraheader{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mnEsq{
+    padding-top: 2.5vh;
+    padding-bottom: 1.5vh;
+    text-align: center;  
+}
+
+.mnDir{
+    padding-top: 2.5vh;
+    padding-bottom: 1.5vh;
+    text-align: right;
+    margin-right: 200px;
+}
+
+.btnMenu{
+    height: 80%;
+    background-color: transparent;
+    border: 0px;
+    color: black;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 25px;
+    padding-right:  25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Ação quando o mouse está em cima do elemento - Hover */
+.btnMenu:hover{
+    border: solid 1.3px;
+    border-color: rgb(224, 79, 224);
+    color: white;
+    background-color: rgb(224, 79, 224);
+}
+
+main{
+    height: 100%;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainEsq{
+   padding-top: 15vh;
+   text-align: center;
+}
+
+.mainDir{
+    padding-top: 20vh;
+    text-align: right;
+}
+
+aside.esq{
+    height: 100%;
+    grid-column: 1/2;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+aside.dir{
+    height: 100%;
+    grid-column: 3/4;
+}
+
+footer{
+    height: 100px;
+    grid-column: 1/4;
+}
+
+body{
+    margin: 0;
+}
+
+#btnMenu{
+    background-color: transparent;
+    height: 100%;
+
+}
+
+.container-ctt{
+    display: grid;
+    grid-template-rows: 0.33fr 2fr;
+}
+
+.c-ctt-esq{
+    background-color: tomato;
+}
+
+.c-ctt-dir{
+    background-color: tomato;
+}
+
+.btn-fechar-ctt{
+    background-color: transparent;
+    border: 0;
+    height: 60%;
+    width: 50px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+}
+
+.btn-fechar-ctt:hover{
+    background-color:crimson;
+    color: white;
+}

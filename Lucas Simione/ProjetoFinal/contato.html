@@ -6,19 +6,39 @@
     <title>Template</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-ctt">
         <header style="box-shadow: 0px;">
-            <div class="mnEsq">
+            <div class="mnEsq" >
                 <!-- Aqui vai o logo da empresa -->
                 <a href="index.html"><img src="logobs.png" alt="" width="200px"></a>
             </div>
-            <div class="mnDir">
+            <div class="mnDir" style=" margin-right: 1vh;">
                 <!-- Aqui vão os botões do menu -->
                 <a href="index.html"><button class="btn-fechar-ctt">X</button></a>
             </div>
         </header>
+        <aside class="esq"></aside>
+        <main style="padding-top: 10vh;">
+            <div class="mainEsq" id="sombraheader" style=" padding-top: 0px; border-radius: 10px; border-color:#C0C0C0;">
+                <h1 style="font-family: 'Montserrat', sans-serif;">Entre em contato conosco!</h1>
+                <form action="">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <div style="display: grid; grid-template-columns: 0.5fr 1fr;">
+                        <input type="tel" placeholder="Telefone" style="margin-right: 0px;">
+                        <input type="email" placeholder="E-mail" style="margin-left: 10px;">
+                    </div>
+                    <textarea name="Comentario" id="" cols="30" rows="10" style="height: 150px;" placeholder="O que você tem a dizer?"></textarea>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+            <div class="mainDir">
+                
+            </div>
+        </main>
+        <aside class="dir"></aside>
     </div>
 </body>
 </html>

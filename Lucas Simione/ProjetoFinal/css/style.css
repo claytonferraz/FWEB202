@@ -168,17 +168,13 @@ form{
     display: grid;
 }
 
-input,textarea{
+input,textarea, select{
     height: 25px;
     font-family: 'Montserrat', sans-serif;
-    color: silver;
+    color: black;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 10px;
-}
-
-input:focus{
-    color: black;
 }
 
 input.submit{

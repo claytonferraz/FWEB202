@@ -1,0 +1,4 @@
+#alvo {
+    display: flex;
+    flex-direction: column;
+}

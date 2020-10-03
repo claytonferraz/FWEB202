@@ -17,3 +17,15 @@ h1{
 #calcular{
     width: 177px;
 }
+
+#custom{
+    width: 177px;
+    color: green;
+    background-color: transparent;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}

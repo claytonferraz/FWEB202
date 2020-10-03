@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1>Mostra todos os números impares de 0 a 100:</h1>
+    <br>
+    <button id="botao">Mostrar</button>
+    <br>
+    <p id="resultado"></p>
+
+    <script type="text/javascript">
+        
+        var impares = [0];
+        var resultado = document.getElementById('resultado');
+        for(i = 1; i <= 100; i++){
+            if((i%2)!== 0)  
+            {
+                impares.push(i);
+            }
+           
+        }
+
+        var botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function(){
+            console.log(impares);
+            resultado.innerHTML = impares;
+        })
+    </script>
+</body>
+</html>

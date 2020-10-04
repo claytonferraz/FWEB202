@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Segunda Página</title>
+    </head>
+    <body>
+        <h1>Segunda pagina</h1>
+        <h1><a href="https://www.google.com.br"> Google</a></h1>
+        <h1><a href="index.html"> 1 Pagina</a></h1>
+    </body>
+</html>

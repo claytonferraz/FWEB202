@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mim</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sobre-mim.css">
+  <link rel="stylesheet"  href="css/fale-conosco.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <ol> <a href="index.html"> Raff Evald </a> </ol>
+    </ul>
+
+    <ul>
+      <ol> <a href="index.html"> Início </a> </ol>
+      <ol> <a href="portfolio.html"> Portfolio </a> </ol>
+      <ol> <a href="curiosidades.html"> Curiosidades </a> </ol>
+      <ol> <a href="sobre-mim.html"> Sobre - Mim </a> </ol>
+      <ol class="fale-conosco"> <a href="#"> Fale conosco </a> </ol>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <img src="img/sobre-mim/2020-07-12 - 002.jpg">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <div>
+        <h2>Formação academica</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        </p>
+      </div>
+      <img src="img/sobre-mim/experiencia.jpg">
+    </div>
+
+    <div class="container">
+      <img src="img/sobre-mim/experiencia.jpg">
+      <div>
+        <h2>Experiencia profissional</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="social-midia">
+    <div class="social-midia-img">
+     <a href="https://www.facebook.com/rafaelevaldsilva" target="_blank"> <img src="icons/social/facebook.png" alt=""> </a>
+     <a href="https://www.instagram.com/raffevald/?hl=en" target="_blank"> <img src="icons/social/instagram.png" alt=""> </a>
+    </div>
+  </div>
+  <footer>
+    <div> Copyright &copy; RaffEvald - 2020 </div>
+  </footer>
+
+  <div id="modal-fale-conosco" class="modal-container">
+    <div class="modal">
+      <button class="fechar">x</button>
+      <h3 class="fale-conosco">Fale conosco</h3>
+      <form class="formularios" action="">
+
+          <legend class="grups">Informações pessoais </legend>
+          <div class="dados-groups">
+            <input name="nome" type="text" class="input" placeholder="Nome" required>
+            <input name="sobrenome" type="text" class="input" placeholder="Sobre nome" required>
+          </div>
+          <div class="dados-groups">
+            <input name="nascimento" type="text" class="input" placeholder="Data de nascimento" required>
+            <input name="sexo" type="text" class="input" placeholder="Sexo" required>
+          </div>
+
+          <legend class="grups">Informação de contatos </legend>
+          <input name="contatoTel" type="text" placeholder="Telefone" required>
+          <input name="contatoEmail" type="email" placeholder="E-mail" required>
+
+          <legend class="grups">Informação de endereços </legend>
+          <div class="dados-groups">
+            <input name="estado" type="text" placeholder="Estado" required>
+            <input name="cidade" type="text" placeholder="Cidade" required>
+          </div>
+          <input name="rua" type="text" placeholder="Logradouro" required>
+
+          <legend class="grups">Sobre o site e trabalho </legend>
+          <input name="sujestao" type="text" placeholder="Deixe sua sujestão" required>
+
+          <button type="submit"> Enviar dados </button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="JavaScript/modal.js"></script>
+</body>
+</html>

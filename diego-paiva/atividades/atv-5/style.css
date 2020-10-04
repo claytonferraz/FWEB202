@@ -1,0 +1,7 @@
+#alvo {
+    display: flex;
+    flex-direction: column;
+}#erro {
+    color: red;
+    font-size: 2rem;
+}

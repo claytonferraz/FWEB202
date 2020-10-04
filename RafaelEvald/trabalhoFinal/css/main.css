@@ -1,0 +1,116 @@
+* {
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif sans-serif;
+  box-sizing: content-box;
+}
+
+/* Inicio - NavBar - Barra de navegação*/
+nav {
+  text-decoration: none;
+  display: flex;
+  background-color: blanchedalmond;
+  padding: 1vw;
+}
+ul {
+  font-size: 4vh;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transform: 800s;
+}
+a:hover {
+  border-bottom: 3px solid black;
+}
+/*Fim - NavBar - Barra de navegação*/
+
+/*Inicio - Corpo do Site*/
+main {
+  width: 85%;
+  max-width: 1200px;
+}
+.titulos {
+  font-size: 5vh;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+/*Fim - Corpo do Site*/
+
+/*Inicio - Arepsetação do site*/
+.apresentacao{
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.apresentacao img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.apresentacao div {
+  margin: auto;
+}
+.apresentacao h2 {
+  text-align: center;
+}
+.apresentacao p {
+  font-size: 1.5vw;
+  text-align: justify;
+}
+/*Fim - Arepsetação do site*/
+
+/*Containers lados*/
+.container-direito-esquerdo{
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+ /* border-top: 3px solid black; */
+}
+
+
+/*Lado esquerdo*/
+.lado-esquerdo {
+  width: 50%;
+}
+
+/*Inicio - Lado direito*/
+.lado-direito {
+  width: 50%;
+  margin-left: 3px;
+}
+/*Fim - lado direito*/
+
+/*Inicio - links*/
+.links {
+  transform: 1000s;
+}
+.links:hover {
+  opacity: 0.3;
+}
+/*Fim - links*/
+
+/*Inicio - Social midia*/
+.social-midia{
+  display: flex;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+
+}
+.social-midia-img img {
+  width: 40px;
+/*margin-left: 10px; */
+margin: 0 auto;
+}
+/*Fim - Social midia*/
+
+/*Inicio - Rodape*/
+footer {
+  text-decoration: none;
+  display: flex;
+  background-color: blanchedalmond;
+  padding: 1vw;
+}
+/*Fim - Rodape*/

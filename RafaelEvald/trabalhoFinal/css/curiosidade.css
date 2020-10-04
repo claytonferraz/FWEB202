@@ -1,0 +1,93 @@
+/*Inicio - Links para curiosidades*/
+.container {
+  display: flex;
+  box-shadow: 1px 1px 1px 1px;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.container img {
+  width: 30%;
+}
+.container h2 {
+  font-size: 2.3vw;
+  text-align: center;
+}
+.container p {
+  text-align: justify;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  font-size: 1.3vw;
+}
+.container span {
+  font-size: 1.5vw;
+  background-color:rgb(223, 215, 215);
+  padding: 0.5%;
+  border-radius: 25%;
+  margin-left: 87%;
+}
+.container a {
+  border-bottom: none;
+}
+/*Fim - Links para curiosidades*/
+
+/*Inicio - dados*/
+.dados {
+  box-shadow: 2px 2px 0px 0px;
+}
+.dados h2 {
+  font-size: 2.3vw;
+  box-shadow: 0px 0.2px 0px 0px;
+}
+.dados p {
+  font-size: 1.3vw;
+  text-align: justify;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+/*Fim - dados*/
+
+/*Inicio - tabela*/
+table#tabela1 {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table#tabela1 td {
+  border: 1px solid #606060;
+  padding: 10px;
+  text-align: right;
+}
+table#tabela1 td.ce {
+  color: white;
+  background-color: #606060;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: right;
+}
+table#tabela1 td.cd {
+  background-color: #cecece;
+  text-align: left;
+}
+table#tabela1 caption {
+  color: #888888;
+  font-size: 13pt;
+  font-weight: bolder;
+}
+
+table#tabela1 caption span {
+  display: block;
+  float: right;
+  color: black;
+  font-size: 8pt;
+  margin-top: 10px;
+}
+/*Fim - tabela*/
+
+/*Inicio - fonte*/
+.fonte p {
+  font-size: 1.7vw;
+  margin-top: 0.5%;
+  margin-left: 76%;
+}
+/*Fim - fonte*/

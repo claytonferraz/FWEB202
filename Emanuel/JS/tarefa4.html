@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>tarefas 4</title>
+    </head>
+    <body>
+        <script>
+            var resultado=[10]
+            var n1 =prompt("digite o primeiro nome")
+            var n2 =  prompt("digite o segundo nome")
+            var n3 =prompt("digite o terceiro nome")
+            var n4 =prompt("digite o quarto nome")
+            var n5 =prompt("digite o quinto nome")
+            var n6 =prompt("digite o sexto  nome")
+            var n7 =prompt("digite o setimo nome")
+            var n8 =prompt("digite o oitavo nome")
+            var n9 =prompt("digite o nono nome")
+            var n10 =prompt("digite o decimo nome")
+            var nome=[n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]
+            var nomes=[10]
+            for(var i = 0; i < 10; i++){
+                var nomes = nome[i].value
+                if(nomes.length == 4)
+                nomes[i]=nomes[i]
+                else{
+                nomes[i]="nome com mais de 4 silabas"
+            }
+            }
+            for(var i = 0; i < 10; i++){           
+           resultado.innerText = `nomes: ${nomes[i]}`
+                }
+                function alerte() {
+                alert(resultado);
+                }
+        </script>
+         <input type="button" onclick="alerte()" value="Exibir resultado" /></br></br>
+         <a href="index.html">volta</a>
+    </body>
+
+</html>

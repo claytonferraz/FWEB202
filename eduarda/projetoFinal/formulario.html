@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <title> Formulário </title>
+        <link rel= "stylesheet" type= "text/css" href="css/formulario.css">
+        <script src ="JavaScript/validacao.js"></script>
+       
+    </head>
+    <body>
+
+        <div class="logo"> <a href= "index.html"> <img src= "imagens/logotipo.png"></a></div>
+        <div id= "menu">
+      
+            <ul>
+                <li><a href = "index.html">Início</a></li>
+                <li><a href = "index.html">Adotar</a></li>
+                <li><a href = "sobre.html">Projeto</a></li>
+                <li><a href = "curiosidades.html">Curiosidades</a></li>
+                <li><a href = "contato.html">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="barra">
+            <footer>
+              </footer>
+        </div>
+
+        <div class ="titulo">
+            <p> Adote um Bichinho </p>
+        </div>
+
+
+     <section class = "content">
+
+        <div class="grupo">
+            <form class= "form" name= "foradocao" action="formulario.html" method="POST" onsubmit= "return validacao()">
+            
+
+                <input class= "field" type="text" name= "nome" placeholder="Digite seu nome completo" /> </br>
+
+                <input class= "field" type="text" name= "email" placeholder="Digite seu email" /> </br>
+
+                <input class= "field" type="text" name="telefone" placeholder="Digite seu telefone" /> </br>
+
+                <input class= "field" type="text" name="datanasc" placeholder="Digite sua Data de Nascimento" /> </br>
+                            
+                    <select class= "field" name= "secao" size="1">
+                            <option value= "animalzinho">Escolha seu Animalzinho </option>
+                            <option value= "mel">Mel</option>
+                            <option value= "sol">Sol</option>
+                            <option value= "francisco">Francisco</option>
+                            <option value= "bartolomeu">Bartolomeu</option>
+                            <option value= "oracio">Oracio</option>
+                            <option value= "piteco">Piteco</option>
+
+                            <option value= "orelha">Orelha</option>
+                            <option value= "lucifer">Lucifer</option>
+                            <option value= "violeta">Violeta</option>
+                            <option value= "leao">Leão</option>
+                            <option value= "thor">Thor</option>
+                            <option value= "plutao">Plutao</option>
+                </select> 
+            </br>
+
+                <input  class= "field" type="text" name= "bairro" placeholder="Digite seu bairro" /></br>
+
+                <input class= "field" type="text" name= "rua" placeholder="Digite sua rua" /></br>
+
+                <input class= "field" type="number"  name= "numero" placeholder="Digite o número da sua casa" /></br>
+
+                <input class= "field" type="text" name= "cidade" placeholder="Digite sua cidade" /></br>
+
+                <textarea class = "field" type="text" name="mensagem" placeholder="Por que você seria um bom candidato para adotar esse animalzinho? "></textarea> </textarea> </br>
+        
+                <input class= "field"  type="submit" name="salvar" value="Enviar" />
+                <input class= "field" type= "reset" value="Limpar Formulário"> 
+        
+
+            </form>
+        </div>
+    </section>
+
+
+
+
+        <div class="final"> <a href= "index.html"> </a></div>
+        <div id= "final">
+      
+            <ul>
+                <li><a href = "index.html">Início | </a></li>
+                <li><a href = "index.html">Adotar |</a></li>
+                <li><a href = "sobre.html">Projeto|</a></li>
+                <li><a href = "curiosidades.html">Curiosidades | </a></li>
+                <li><a href = "contato.html">Contato | </a></li>
+                
+            </ul>
+        </div>
+
+        <div class= "rodape">
+        <footer>
+            <div> Copyright &copy; Eduarda Alves  - 2020 </div>
+          </footer>
+        </div>
+
+
+    </body>
+</html>

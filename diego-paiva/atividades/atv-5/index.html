@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, intial-scale=1.0' />
+    <title>Atividade </title>
+    <link rel='stylesheet' href='./style.css' />
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+    <div id="alvo">
+        <label for="fName">Nome</label>
+        <input type="text" name="fName" id="Nome">
+        <label for="sName">Sobrenome</label>
+        <input type="text" name="sName" id="Sobrenome">
+        <label for="birth">Nascimento</label>
+        <input type="date" name="birth" id="Nascimento">
+        <label for="gender">Gênero</label>
+        <select name="gender" id="Gênero">
+            <option value="mas">Masculino</option>
+            <option value="fem">Feminino</option>
+        </select>
+        <label for="street">Rua</label>
+        <input type="text" name="street" id="Rua">
+        <label for="number">Numero</label>
+        <input type="tel" name="number" id="Numero">
+        <label for="neigh">Bairro</label>
+        <input type="text" name="neigh" id="Bairro">
+        <label for="city">Cidade</label>
+        <input type="text" name="city" id="Cidade">
+        <label for="state">Estado</label>
+        <input type="text" name="state" id="Estado">
+        <div id="erro"></div>
+        <button type="submit" onclick="validateForm()">Cadastrar</button>
+    </div>
+</body>

@@ -5,26 +5,34 @@
     <title>Atividade 03</title>
 </head>
 <body>
-    <h1>Mostra apenas nomes com quatro ou menos caracteres:</h1>
+    <h1>Mostra a média entre quatro números:</h1>
     <br>
-    <button id="botao">Mostrar</button>
-    <form name="formulario" action="action.php">
-
-        
+    <button id="botao">Calcular</button>
+    
+        Primeiro Número: <input type="number" name="n01"><br><br>
+        Segundo Número: <input type="number" name="n02"><br><br>
+        Terceiro Número: <input type="number" name="n03"><br><br>
+        Quarto Número: <input type="number" name="n04"><br><br>
+       
     </form>
     <p id="resultado">Resultado</p>
 
     <script type="text/javascript">
+        var media = 0;
         var resultado = document.getElementById('resultado');
-        for(i = 0; i<=100; i++){
-            soma = soma + i;
-        }
-        var botao = document.getElementById('botao');
+        var numero1 = parseInt(document.querySelector("n01").value);
+        var numero2 = parseInt(document.getElementById('n02').value);
+        var numero3 = parseInt(document.getElementById('n03').value);
+        var numero4 = parseInt(document.getElementById('n04').value);
+        media = (numero1 + numero2 + numero4 + numero3);
+        media = media/4;
 
-        botao.addEventListener('click', function(){
-            resultado.innerHTML = soma;
-        })
+        var botao = document.getElementById('botao');
         
+        botao.addEventListener('click', function()
+        {
+            resultado.innerHTML = 'O resultado é de ${media}';
+        })
     </script>
 </body>
 </html>

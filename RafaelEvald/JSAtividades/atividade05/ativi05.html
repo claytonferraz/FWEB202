@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BRs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade - 05</title>
+  <link rel="stylesheet"  href="../main.css">
+  <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <p>
+      5) Criar um tela de cadastro contendo os campos listados abaixo. Faça também a
+      validação dados antes do envio do formulário utilizando Javascript. Identifique os
+      campos em branco e mostrei uma mensagem (Exemplo: O campo Primeiro nome está
+      em branco, favor preencher).
+      <br/>
+      Campos: Primeiro nome, segundo nome, data de nascimento, sexo (Masculino e
+      Feminino), endereço (rua, número, bairro, cidade e estado).
+    </p>
+    <form>
+      <div class="entrada-dados">
+        <h3>Dados Pessoais</h3>
+        <div>
+          <div class="reset">
+            <input class="dadPriNome" placeholder="Primeiro nome," name="pri-nome"> <br/>
+            <p id="alertNomePr" class="aviso"> Favor preencher PRIMEIRO NOME.</p>
+          </div>
+          <div class="reset">
+            <input class="dadSegNome" placeholder="Segundo nome," name="seg-nome">
+            <p id="alertNomeSeg" class="aviso"> Favor preencher SEGUNDO NOME.</p>
+          </div>
+        </div>
+        <div>
+          <div class="reset">
+            <input class="nascimento" placeholder="Data de nascimento." name="nascimento">
+            <p id="alertNascimento" class="aviso"> Favor preencher DATA DE NASCIMENTO.</p>
+          </div>
+          <div class="reset">
+            <div class="sexo">
+                Sexo: 
+                <input class="sex" type="radio" id="masculino" name="sexo" value="m" checked>
+                <label for="masculino">Masculino</label><br>
+                <input class="sex" type="radio" id="Femenino" name="sexo" value="f">
+                <label for="Femenino">Femenino</label><br>
+            </div>
+            <p id="alertSexo" class="aviso "> Favor preencher DATA DE NASCIMENTO.</p>
+          </div>
+        </div>
+        <h3>Dados de endereço</h3>
+        <div>
+          <div class="reset">
+            <input class="estado" placeholder="Estado" name="estado">
+            <p id="alertEstad" class="aviso "> Favor preencher ESTADO.</p>
+          </div>
+          <div class="reset">
+            <input class="city" placeholder="Cidade" name="cidade">
+            <p id="alertCity" class="aviso"> Favor preencher CIDADE.</p>
+          </div>
+        </div>
+        <div class="enderecos">
+          <div class="reset">
+            <input id="bairro" class="bairro" placeholder="Bairro" name="bairro">
+            <p id="alertBairro" class="aviso"> Favor preencher BAIRRO.</p>
+          </div>
+          <div class="reset">
+            <input id="rua" class="rua" placeholder="Informar o logradouro." name="rua">
+            <p id="alertRua" class="aviso"> Favor preencher RUA.</p>
+          </div>
+          <div class="reset">
+            <input id="num" class="numero" placeholder="Número" name="numero">
+            <p id="alertNum" class="aviso"> Favor preencher NÚMERO.</p>
+          </div>
+        </div>
+
+      </div>
+    
+    </form>
+
+
+
+    <br/>
+    <br>
+    <button class="cadastrar"> Cadastrar </button>
+    <button class="limpar" type="reset"> Limpar </button>
+
+    <div> <p  class="resut"> Pessoas com nome que possuia quatro letras: ??? </p> </div>
+    <a href="../index.html"><button> Voltar para menu </button></a>
+  </div>
+
+  <script src="main.js"> </script>
+</body>
+</html>

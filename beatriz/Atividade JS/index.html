@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividades de JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+        <script src="JS/atividades.js"></script>
+    </head>
+
+    <body>
+    <h2>Atividade 1</h2>
+    <h4>Escreva um código que mostre os números ímpares entre 1 e 100. Exiba todos os resultados de um só vez.</h4>
+    <p><input type="button" value="exibir" onclick="NumeroImparesAtv01()"></p>
+    <div id="resulAtv01"></div>
+
+    <h2>Atividade 2</h2>
+    <h4>Escreva um código que calcule a soma de 1 até 100. (obs: a resposta é 5050).</h4>
+    <p><input type="button" value="somar" onclick="SomanumerosAtv02()"></p>
+    <div id="resultAtv2"></div>
+
+    <h2>Atividade 3</h2>
+    <h4>Escreva um código que o usuário insira 4 números e apresente a soma e a média como
+        resultado. Utilize a função parseInt() para converter string em integer.</h4>
+        <form id="form01">
+            <p>
+                Informe o primeiro número:
+                <input type="text" name="num1" size="10">
+            </p>
+            <p>
+                Informe o segundo número:
+                <input type="text" name="num2" size="10">
+            </p>
+            <p>
+                Informe o terceiro número:
+                <input type="text" name="num3" size="10">
+            </p>
+            <p>
+                Informe o quarto número:
+                <input type="text" name="num4" size="10">
+            </p>
+            <p><input type="button" value="somar e calcular" onclick="SomarMedia4numAtv03()"></p>
+        </form>
+    <div id="resultAtv3"></div>
+
+    <h2>Atividade 4</h2>
+    <h4>Escreva um código que o usuário insira 10 nomes de pessoas. Armazene esses nomes em um
+        Array igual ao abaixo e mostre apenas os nomes das pessoas que tenham 4 letras..</h4>
+        <form id="form02">
+            <p>
+                Informe o primeiro nome:
+                <input type="text" name="prinome" size="20">
+            </p>
+            <p>
+                Informe o segundo nome:
+                <input type="text" name="segnome" size="20">
+            </p>
+            <p>
+                Informe o terceiro nome:
+                <input type="text" name="tercnome" size="20">
+            </p>
+            <p>
+                Informe o quarto nome:
+                <input type="text" name="quartnome" size="20">
+            </p>
+            <p>
+                Informe o quinto nome:
+                <input type="text" name="quintnome" size="20">
+            </p>
+            <p>
+                Informe o sexto nome:
+                <input type="text" name="sextnome" size="20">
+            </p>
+            <p>
+                Informe o sétimo nome:
+                <input type="text" name="setnome" size="20">
+            </p>
+            <p>
+                Informe o oitavo nome:
+                <input type="text" name="oitnome" size="20">
+            </p>
+            <p>
+                Informe o nono nome:
+                <input type="text" name="nononome" size="20">
+            </p>
+            <p>
+                Informe o décimo nome:
+                <input type="text" name="decnome" size="20">
+            </p>
+            <p><input type="button" value="resultado" onsubmit="ContarNomeAtv04()"></p>
+        </form>
+        <div id="resultAtv4"></div>
+
+
+
+    <h2>Atividade 5</h2>
+    <h4>Criar um tela de cadastro contendo os campos listados abaixo. Faça também a
+        validação dados antes do envio do formulário utilizando Javascript. Identifique os
+        campos em branco e mostrei uma mensagem (Exemplo: O campo Primeiro nome está
+        em branco, favor preencher).</h4>
+
+        <form id="form03" method="POST" onsubmit=" return ValidacaoDadosFormularioAtv5();">
+        <p>
+            Informe seu primeiro nome:
+            <input type="text" name="nome" size="10">
+        </p>
+
+        <p>
+            Informe seu sobrenome:
+            <input type="text" name="segundonome" size="10">
+        </p>
+
+        <p>
+            Informe sua data de nascimento:
+            <input type="date" name="datanasc">
+        </p>
+
+        <p>
+            Informe se sexo:
+            <dl>
+                <dd>
+                    <input type="radio" name="sexo" value="feminino">Feminino
+                    <input type="radio" name="sexo" value="masculino">Masculino
+                </dd>
+            </dl>
+        </p>
+
+        <p>
+            Informe sua rua:
+            <input type="text" name="rua" size="20">
+        </p>
+        
+        <p>
+            Informe o número da casa:
+            <input type="text" name="numero" size="20">
+        </p>
+
+        <p>
+            Informe o nome do seu bairro:
+            <input type="text" name="bairro" size="20">
+        </p>
+
+        <p>
+            Informe o nome da sua cidade:
+            <input type="text" name="ciade" size="20">
+        </p>
+
+        <p>
+            Informe o nome do seu estado:
+            <input type="text" name="estado" size="20">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar" nome="enviar">
+        </p>
+        </form>
+
+
+
+    <h2>Atividade 6</h2>
+    <h4>Crie um formulário de cadastro de login com os campos nome de usuário, senha e
+        confirma a senha. Faça a verificação das senhas, o formulário só poderá ser enviado
+        se for preenchido os campos e as senhas dos campos sejam iguais.</h4>
+        
+        <form id="form04" method="post" onSubmit="return ValidacaoDadosAtv06();">
+            <p>
+                Digite seu usuário:
+                <input type="text" name="user" size="20">
+            </p>
+            <p>
+                Digite sua senha:
+                <input type="password" name="senha1" size="20">
+            </p>
+            <p>
+                Confirme sua senha:
+                <input type="password" name="senha2" size="20">
+            </p>
+            <p>
+                <input type="submit" value="enviar" nome="enviar">
+            </p>
+        </form>
+
+
+
+    <h2>Atividade 7</h2>
+    <h4>Faça uma formulários com os campos CPF e E-mail e verifique se estão válidos. O
+        formulário só poderá ser submitido se os dados forem válidos.</h4>
+
+    <h2>Atividade 8</h2>
+    <h4> 8) Pesquise sobre os eventos javascript estudados e escolha 5 eventos e faça
+        exemplos de cada um. Obs.: Eventos que não poderá entrar na lista: onclick,
+        onsubmit..</h4>
+
+
+
+
+    </body>
+
+    <footer>
+        <div>Copyright &copy; Beatriz Oliveira - 2020 </div>
+    </footer>
+</html>

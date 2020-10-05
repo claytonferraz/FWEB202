@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Atividades de JavaScript</title>
+        <script
+            type="text/javascript"
+            src="js/atividades.js">
+        </script>
+    </head>
+    <body onload="checarCookies()";>
+        <h1> Atividades de JavaScript</h1>
+        <h2>Exibir ímpares de 1 à 100</h2>
+        <p>
+            <input type="button" value="Mostrar" onclick="Exercicio1()">
+        </p>
+        <div id="resultado1"></div>
+
+        <h2>Somar números de 1 à 100</h2>
+        <p>
+            <input type="button" value="Somar" onclick="Exercicio2()">
+        </p>
+        <div id="resultado2"></div>
+
+        <h2>Soma e Média de 4 números</h2>
+        <form id="formulario1">
+            <p>
+                Digite o primeiro numero:
+                <input type="text" name="primeiro">
+            </p>
+            <p>
+                Digite o segundo numero:
+                <input type="text" name="segundo">
+            </p>
+            <p>
+                Digite o terceiro numero:
+                <input type="text" name="terceiro">
+            </p>
+            <p>
+                Digite o quarto numero:
+                <input type="text" name="quarto">
+            </p>
+            <p>
+                <input type="button" value="Somar" onclick="Exercicio3()">
+            </p>
+        </form>
+        <div id="resultado3"></div>
+        
+        <h2>Insira 10 nomes e mostre quais tem 4 letras</h2>
+        <form id="formulario2">
+            <p>
+                Primeiro nome:
+                <input type="text" name="nome1">
+            </p>
+            <p>
+                Segundo nome:
+                <input type="text" name="nome2">
+            </p>
+            <p>
+                Terceiro nome:
+                <input type="text" name="nome3">
+            </p>
+            <p>
+                Quarto nome:
+                <input type="text" name="nome4">
+            </p>
+            <p>
+                Quinto nome:
+                <input type="text" name="nome5">
+            </p>
+            <p>
+                Sexto nome:
+                <input type="text" name="nome6">
+            </p>
+            <p>
+                Sétimo nome:
+                <input type="text" name="nome7">
+            </p>
+            <p>
+                Oitavo nome:
+                <input type="text" name="nome8">
+            </p>
+            <p>
+                Nono nome:
+                <input type="text" name="nome9">
+            </p>
+            <p>
+                Décimo nome:
+                <input type="text" name="nome10">
+            </p>
+            <p>
+                <input type="button" value="Ver" onclick="Exercicio4()">
+            </p>
+        </form>
+
+        <h2>Verificação de campos em branco em um cadastro</h2>
+        <form id="formulario3" method="post" onSubmit="return Exercicio5();">
+            <p>
+                Primeiro nome:
+                <input type="text" name="nome">
+            </p>
+            <p>
+                Sobrenome:
+                <input type="text" name="sobrenome">
+            </p>
+            <p>
+                Nascimento:
+                <input type="date" name="nascimento">
+            </p>
+            <p>
+                Sexo biológico:
+                <dl>
+                    <dd>
+                        <input type="radio" name="sexo" value="feminino">Feminino
+                        <input type="radio" name="sexo" value="masculino">Masculino
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                Rua:
+                <input type="text" name="rua">
+            </p>
+            <p>
+                Número:
+                <input type="text" name="numero">
+            </p>
+            <p>
+                Bairro:
+                <input type="text" name="bairro">
+            </p>
+            <p>
+                Cidade:
+                <input type="text" name="cidade">
+            </p>
+            <p>
+                Estado:
+                <input type="text" name="estado">
+            </p>
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+        </form>
+
+        <h2>Verificação de usuário e senha</h2>
+        <form id="formulario4" method="post"
+        onSubmit="return Exercicio6();">
+            <p>
+                Usuário:
+                <input type="text" name="usuario">
+            </p>
+            <p>
+                Senha:
+                <input type="password" name="senha">
+            </p>
+            <p>
+                Confirmação:
+                <input type="password" name="senha2">
+            </p>
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+        </form>
+
+        <h2>Verificação de email e CPF</h2>
+        <form id="formulario5" method="post"
+        onSubmit="return Exercicio7();">
+            <p>
+            E-mail:
+            <input type="text" name="email">
+            </p>
+            <p>
+                CPF:
+                <input type="text" name="cpf">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </form>
+
+        <br/>
+        
+        <p><b>Exemplo de aplicação dos eventos ONFOCUS e ONBLUR:</b></p>
+        <input type="text" placeholder="Nome Completo" id="valor" onblur="Exercicio8()">
+        <div id="valor2"></div>
+
+        <br/>
+        <br/>
+        <br/>
+        <p><b>Exemplo dos eventos ONMOUSEOVER e ONMOUSEOUT:</b></p>
+        <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="exemplo2" id="mouseAlt">Ei mouse, venha aqui</div>
+
+        <br/>
+        <br/>
+        <br/>
+        <p><b>Exemplo do evento ONLOAD:</b></p>
+        <div id="exemplo3"></div>
+    </body>
+</html>

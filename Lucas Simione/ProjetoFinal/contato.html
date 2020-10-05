@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Beautiful Secret - Contato</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-ctt">
-        <header style="box-shadow: 0px;">
-            <div class="mnEsq" >
+        <header id="sombraheader">
+            <div class="mnEsq">
                 <!-- Aqui vai o logo da empresa -->
-                <img src="logobs.png" alt="" width="200px">
+                <a href="index.html"><img src="logobs.png" alt="" width="200px"></a>
             </div>
-            <div class="mnDir" style=" margin-right: 1vh;">
+            <div class="mnDir">
                 <!-- Aqui vão os botões do menu -->
-                <a href="index.html"><button class="btn-fechar-ctt">X</button></a>
+                <a href="moda.html"><button class="btnMenu">Moda</button></a>
+                <a href="maquiagem.html"><button class="btnMenu">Maquiagem</button></a>
+                <a href="saude.html"><button class="btnMenu">Saúde</button></a>
+                <a href="contato.html"><button class="btnMenu">Contato</button></a>
             </div>
         </header>
         <aside class="esq"></aside>
         <main style="padding-top: 10vh;">
-            <div class="mainEsq" id="sombraheader" style=" padding-top: 0px; border-radius: 10px; border-color:#C0C0C0;">
+            <div class="mainEsq" id="sombraheader" style=" padding-top: 0px; border-radius: 10px; border-color:#C0C0C0; padding-bottom: 40px;">
                 <h1 style="font-family: 'Montserrat', sans-serif;">Entre em contato conosco!</h1>
                 <form action="">
                     <input type="text" name="nome" placeholder="Nome" required>
@@ -61,7 +64,7 @@
                     <div style="display: grid; grid-template-columns: 10% 1fr;">
                         <div style="text-align: left; padding-right: 200px;"><input type="checkbox" name="" id="" checked style="margin-top: 0px;"> </div>
                         <div style="text-align: left; padding-top: 0.2vh;"><label for="novEmail" style="font-family: 'Montserrat', sans-serif; text-align: left; font-size: 12px; 
-                        color: rgb(146, 146, 146); margin-top: 0px;">Desejo receber novidades no email.</label></div>
+                        color: rgb(146, 146, 146); margin-top: 0px;">Desejo receber novidades pelo email.</label></div>
                     </div>
                     
                     <input type="submit" class="submit">

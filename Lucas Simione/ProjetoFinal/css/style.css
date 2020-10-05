@@ -57,7 +57,6 @@ header{
 }
 
 main{
-    height: 100%;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,4 +190,14 @@ input.submit{
 input.submit:hover{
     color: white;
     background-color: rgb(197, 68, 197);
+}
+
+.circulo{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

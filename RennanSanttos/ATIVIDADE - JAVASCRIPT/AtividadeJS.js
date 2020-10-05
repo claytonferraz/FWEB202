@@ -33,105 +33,117 @@ function SomarMedia4numerosAtividade3() {
     document.getElementById('resultAtv3').innerHTML = "A soma dos quatros números é: "+somar+" e a média deles é: "+media;
 }
 
-function ContarNomeAtividade4() {
-    var FormAtv4 = document.getElementById("FormularioAtiv4");
-        var nomes4letras = 
-                [form.prinome.value, 
-                FormAtv4.segnome.value, 
-                FormAtv4.tercnome.value, 
-                FormAtv4.quartnome.value, 
-                FormAtv4.quintnome.value, 
-                FormAtv4.sextnome.value, 
-                FormAtv4.setnome.value, 
-                FormAtv4.oitnome.value, 
-                FormAtv4.nononome.value, 
-                FormAtv4.decnome.value];
-                for (var i = 0; i <= nomes4letras.length; i++) 
-                {
-                    if (nomes4letras[i].length == 4) 
-                    {
-                    document.getElementById('resultAtv4').innerHTML = "O(s) Nome(s) com a(s) quatro letra(s) são: "+nomes4letras[i];
-                    }
-                }
-            
-        
+function ContarNomeAtividade4() 
+{
+    var form = document.getElementById("FormularioAtiv4");
+    var nomes = [form.nome1.value, 
+        form.nome2.value, 
+        form.nome3.value, 
+        form.nome4.value, 
+        form.nome5.value, 
+        form.nome6.value, 
+        form.nome7.value, 
+        form.nome8.value, 
+        form.nome9.value, 
+        form.nome10.value];
+    for (var i = 0; i <= nomes.length; i++) 
+    {
+        if (nomes[i].length == 4) 
+        {
+            alert("O(s) Nome(s) com a(s) quatro letra(s) são: "+nomes[i]);
+        }
     }
-
+}
 
 function ValidacaoDadosFormularioAtividade5() {
-    var FormAtv5 = document.getElementById('FormularioAtiv5');
-    if (FormAtv5.nome.value == "") {
+    var form = document.getElementById('FormularioAtiv5');
+    if (form.nome.value == "") 
+    {
         alert("Campo PRIMEIRO NOME em branco!.");
         return false;
     }
 
-    if (FormAtv5.segundonome.value == "") {
+    if (form.nome2.value == "") 
+    {
         alert("Campo SEGUNDO NOME em branco!.");
         return false;
     }
 
-    if (FormAtv5.datanasc.value == "") {
+    if (form.data.value == "") 
+    {
         alert("Campo DATA DE NASCIMENTO em branco!.");
         return false;
     }
 
     var escolhaSexo = -1;
-    for(var i = FormAtv5.sexo.length - 1; i > -1; i--) {
-        if(FormAtv5.sexo[i].checked) {
+    for(var i = form.sexo.length - 1; i > -1; i--) {
+        if(form.sexo[i].checked) 
+        {
             escolhaSexo = i;
         }
     }
-    if (escolhaSexo == -1) {
+    if (escolhaSexo == -1) 
+    {
         alert("Campo SEXO em branco!!");
         return false;
     }
 
-    if (FormAtv5.rua.value == "") {
+    if (form.rua.value == "") 
+    {
         alert("Campo RUA em branco!.");
         return false;
     }
 
-    if (FormAtv5.numero.value == "") {
+    if (form.numero.value == "") 
+    {
         alert("Campo NUMERO em branco!.");
         return false;
     }
 
-    if (FormAtv5.bairro.value == "") {
+    if (form.bairro.value == "") 
+    {
         alert("Campo BAIRRO em branco!.");
         return false;
     }
 
-    if (FormAtv5.cidade.value == "") {
+    if (form.cidade.value == "") 
+    {
         alert("Campo CIDADE em branco! ");
         return false;
     }
 
-    if (FormAtv5.estado.value == "") {
-        alert("Campo CIDADE em branco!. ");
+    if (form.estado.value == "") 
+    {
+        alert("Campo ESTADO em branco!. ");
         return false;
     }
 }
 
-function ValidacaoDadosAtividade6() {
-    var FormAtv6 = document.getElementById('FormularioAtiv6');
+function Exercicio6() 
+{
+    var form = document.getElementById('formulario4');
 
-    if (FormAtv6.user.value == "") {
-        alert("Digite o seu usuário.");
+    if (form.usuario.value == "") 
+    {
+        alert("O campo usuário deve ser preenchido!");
         return false;
     }
 
-    if (FormAtv6.password1.value == "") {
-        alert("Digite a sua senha.");
+    if (form.senha.value == "") 
+    {
+        alert("Você precisa inserir uma senha!");
         return false;
     }
 
-    if (FormAtv6.password2.value == "") {
-        alert("Confirme a sua senha.");
+    if (form.senha2.value == "") 
+    {
+        alert("O campo de confirmação deve ser preenchido");
         return false;
     }
 
-    if (FormAtv6.password1.value != FormAtv6.password2.value) {
-        alert("Desculpe, as senhas digitas são diferentes, tente novamente.");
+    if (form.senha.value != form.senha2.value) 
+    {
+        alert("As senhas não são iguais");
         return false;
     }
 }
